@@ -14,7 +14,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-	"add-domain": "echo orderofeventide.com > build/CNAME",
+	"add-domain": "echo https://orderofeventide.com > build/CNAME",
     "deploy": "npm run add-domain && gh-pages -d build",
 	"bd": "npm run build && npm run deploy",
     "start": "react-scripts start",

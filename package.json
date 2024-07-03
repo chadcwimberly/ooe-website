@@ -14,7 +14,9 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+	"add-domain": "echo orderofeventide.com > build/CNAME",
+    "deploy": "npm run add-domain && gh-pages -d build",
+	"bd": "npm run build && npm run deploy",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

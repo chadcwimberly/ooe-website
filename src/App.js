@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Order of Eventide
+          Welcome to Order of Eventide
         </p>
       </header>
     </div>

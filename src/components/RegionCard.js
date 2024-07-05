@@ -7,7 +7,7 @@ export default function RegionCard({ src, title }) {
 				className="region-card-img"
 				src={src}
 			/>
-			<h3 className="region-card-title">
+			<h3 className="region-card-title text--center">
 				{title}
 			</h3>
 		</div>

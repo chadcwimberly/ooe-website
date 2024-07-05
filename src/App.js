@@ -3,6 +3,11 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import FeatureCard from './components/FeatureCard';
 import RegionCard from './components/RegionCard';
+import GuildCard from './components/GuildCard';
+import RaceCard from './components/RaceCard';
+import BuyTheBook from './components/BuyTheBook';
+
+import ReactCardSlider from 'react-card-slider-component';
 
 import ImageFeatureMaterials from "./resources/feature-materials.png";
 import ImageFeatureTime from "./resources/feature-time.png";
@@ -15,6 +20,53 @@ import ImageRegionInkulur from "./resources/region-inkulur.png";
 import ImageRegionValeria from "./resources/region-valeria.png";
 import ImageRegionJatagar from "./resources/region-jatagar.png";
 import ImageRegionOlma from "./resources/region-olma.png";
+
+import ImageGuildFighter from "./resources/guild-fighter.png";
+import ImageGuildHunter from "./resources/guild-hunter.png";
+import ImageGuildMage from "./resources/guild-mage.png";
+import ImageGuildMerchant from "./resources/guild-merchant.png";
+
+import ImageRaceHuman from "./resources/race-human@2x.png";
+import ImageRaceElf from "./resources/race-elf@2x.png";
+import ImageRaceDwarf from "./resources/race-dwarf@2x.png";
+import ImageRaceHalfling from "./resources/race-halfling@2x.png";
+import ImageRaceHalfOgre from "./resources/race-half-ogre@2x.png";
+import ImageRaceCentaur from "./resources/race-centaur@2x.png";
+import ImageRaceGnome from "./resources/race-gnome@2x.png";
+import ImageRaceViera from "./resources/race-viera@2x.png";
+import ImageRaceHalfDrake from "./resources/race-half-drake@2x.png";
+import ImageRaceFaun from "./resources/race-faun@2x.png";
+import ImageRaceMemzymzi from "./resources/race-memzymzi@2x.png";
+import ImageRaceRockskin from "./resources/race-rockskin@2x.png";
+import ImageRaceOutlander from "./resources/race-outlander@2x.png";
+import ImageRaceMerfolk from "./resources/race-merfolk@2x.png";
+import ImageRaceTalpoc from "./resources/race-talpoc@2x.png";
+import ImageRaceApex from "./resources/race-apex@2x.png";
+import ImageRaceEmpyrean from "./resources/race-empyrean@2x.png";
+import ImageRaceKhenra from "./resources/race-khenra@2x.png";
+import ImageRaceDrydd from "./resources/race-drydd@2x.png";
+
+const RaceSlider = [
+	{ image: ImageRaceHuman, title: "Human", description: "The most populous and varied of the races, humans are extremely adaptable. Their storied history is checkered by complicated relations with other races." },
+	{ image: ImageRaceElf, title: "Elf", description: "Elves are tall, slender, and fair-skinned in comparison to humans. They often flaunt their intelligence and fortitude. Their culture has mastered mystical medical practices that grant them unusually long life." },
+	{ image: ImageRaceDwarf, title: "Dwarf", description: "These short and sturdy mountain-dwellers have fantastic facial hair. Spending long hours in dank caverns have given them a hardy constitution. Their knowledge of gemstones is unparalleled" },
+	{ image: ImageRaceHalfling, title: "Halfling", description: "These curious little people have a fondness for small valuables, pleasant conversations, and food. Standing at about half the height of a typical human, Halflings love helping others." },
+	{ image: ImageRaceHalfOgre, title: "Half-Ogre", description: "Hulking humanoids that are rippling with muscle and excel at hand-to-hand combat. The larger the brawl, the more their rage is fueled. Their pale skin is often stained red with the blood of their enemies." },
+	{ image: ImageRaceCentaur, title: "Centaur", description: "Fierce yet loyal nomads that employ a strike-first tactic. Because of their half-human, half-horse anatomy, they are skilled in finding weaknesses in both men and monsters." },
+	{ image: ImageRaceGnome, title: "Gnome", description: "Small and mischievous, gnomes are well acquainted with magic and the elements. They are very sore about their size, so only mention it to them if you want to take a beating." },
+	{ image: ImageRaceViera, title: "Viera", description: "Viera are slender and beautiful. They prefer to fight from a distance, rather than dirtying their hands with enemies up close. They take great pride in being Viera, and sometimes look down on others." },
+	{ image: ImageRaceHalfDrake, title: "Half-Drake", description: "These dragon-kin are born by mixing pure bloodlines. They are sharp physically and mentally, and surprise their foes with attacks from all sides." },
+	{ image: ImageRaceFaun, title: "Faun", description: "While their goat-like legs allow them to easily traverse difficult terrain, they often hide their hooves with large boots or shoes. They are cunning and often find a sneaky way to get what they want." },
+	{ image: ImageRaceMemzymzi, title: "Memzymzi", description: "Agile tiger-folk with outstanding agility, and a fear of fire to match it. Memzymzi are extremely athletic and rarely tire. When on the prowl, it's nearly impossible to detect them." },
+	{ image: ImageRaceRockskin, title: "Rockskin", description: "Rockskins have been long-feared for their stony skin and hot-headed temperament. Their heat also runs deep – their cores are nearly molten. When Rockskins die, their cores go cold and they turn completely stiff." },
+	{ image: ImageRaceOutlander, title: "Outlander", description: "As their name implies, the origins of Outlanders remain unknown. These humanoids possess a special connection with Arcane forces, granting them the ability to learn any number of languages. Even so, they prefer to stay silent behind their masks." },
+	{ image: ImageRaceMerfolk, title: "Merfolk", description: "These scaly humanoids are cold-blooded and feel at home in any body of water. Although they love to throw grand feasts, they can be awkward around other races." },
+	{ image: ImageRaceTalpoc, title: "Talpoc", description: "These cultured lizardfolk are often reserved and cautious. However, they have an insatiable appetite for exotic histories, often dedicating years of research to ancient cultures and rituals." },
+	{ image: ImageRaceApex, title: "Apex", description: "An Apex's furry body is attuned to all types of physical training. What their societies lack in technological advancements, they make up for in pure athletic prowess. They are strongly empathic, yet speak in very simple sentences." },
+	{ image: ImageRaceEmpyrean, title: "Empyrean", description: "Empyrean boys and girls are granted powerful abilities by bathing in a milky liquid as part of their tribal coming-of-age ritual." },
+	{ image: ImageRaceKhenra, title: "Khenra", description: "Their sleek form and angular ears make them expert hunters. They love having their hair petted, and will often spend hours grooming each night with their mate." },
+	{ image: ImageRaceDrydd, title: "Drydd", description: "Drydd love to spend time meditating and resting their branches. Their powerful psionic abilities allow them to refresh heroes as well as cause havoc in the minds of foes." }
+]
 
 function App() {
 	return (
@@ -31,8 +83,8 @@ function App() {
 					<div className="container">
 						<div className="grid-2">
 							<div className="text-wrapper">
-								<h1 className="mb-1">Join the Order of Eventide</h1>
-								<p className="mb-1">Order of Eventide is a pen-and-paper RPG where you create dynamic heroes, fight through dungeons full of unique enemies, find powerful equipment, and rise to vanquish the Source of Evil.</p>
+								<h1 className="mb-1-5">Join the Order of Eventide</h1>
+								<p className="mb-1-5">Order of Eventide is a pen-and-paper RPG where you create dynamic heroes, fight through dungeons full of unique enemies, find powerful equipment, and rise to vanquish the Source of Evil.</p>
 								<a className="button">Buy Now</a>
 							</div>
 							<img className="img" src={require('./resources/flavor-dungeoneer.png')} />
@@ -67,10 +119,10 @@ function App() {
 				</div>
 				<div className="section">
 					<div className="container">
-						<h1 className="text--center mb-2">
+						<h1 className="text--center mb-1-5">
 							Regions
 						</h1>
-						<p className="mb-4">
+						<p className="max-w-md mb-4">
 							Heroes will travel through 6 regions, each with their own unique layouts, enemies, and loot.
 						</p>
 						<div className="grid-3">
@@ -98,6 +150,207 @@ function App() {
 								src={ImageRegionOlma}
 								title="Olma"
 							></RegionCard>
+						</div>
+					</div>
+				</div>
+				<div className="section">
+					<BuyTheBook></BuyTheBook>
+				</div>
+				<div className="section">
+					<div className="container">
+						<div className="grid-2">
+							<img className="img" src={require('./resources/surge-blunder.png')} />
+							<div className="text-wrapper">
+								<h1 className="mb-1-5">Surge &amp; Blunder System</h1>
+								<p className="mb-3">
+									The Surge & Blunder System is unique to Order of Eventide. Since the game only uses two 6-sided dice, Surges and Blunders add much more depth to what the dice can do by adding additional benefits to rolling a 6, and negative outcomes to rolling a 1.
+								</p>
+								<h2 className="mb-1">Surges</h2>
+								<p className="mb-1">
+									When a player rolls dice during a hero's attack, rolling a 6 is called a Surge. Heroes can either use a Class Ability in the moment, or bank the Surge as a Surge Charge.
+								</p>
+								<p className="mb-3">
+									Using a Class Ability can deal extra damage, heal, steal, inflict debuffs, or any other number of effects. Banking the Surge Charge can be used later to activate powerful Racial Abilities to turn the tide of battle.
+								</p>
+								<h2 className="mb-1">Blunders</h2>
+								<p className="mb-3">
+									When a 1 is rolled during a Hero's attack, this is called a Blunder. Blunders activate an enemy's special ability that affects the heroes in a variety of ways, including dealing damage to other heroes, gaining buffs, inflicting debuffs, summoning more enemies, and more.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="section">
+					<div className="container">
+						<h1 className="text--center mb-1-5">
+							Guilds
+						</h1>
+						<p className="max-w-md mb-1">
+							There are 4 guilds that offer unique benefits with Guild Perks, and will recognize incredible feats with Guild Titles.
+						</p>
+						<p className="max-w-md mb-4">
+							Each guild has their own set of values and operating methods. Guild Titles are bestowed on guildmembers who have achieved outstanding feats throughout their adventures. You don't need to be a part of the guild when you perform the feat, but you can only use the title while you're a member of that guild.
+						</p>
+						<div className="grid-4">
+							<GuildCard
+								src={ImageGuildFighter}
+								title="Fighter's Guild"
+								desc="These warriors dedicate their time to helping fighters push their bodies beyond normal limits. Their unusual equipment is gathered from all around the continent. The results are simultaneously unbelievable and undeniable."
+							></GuildCard>
+							<GuildCard
+								src={ImageGuildHunter}
+								title="Hunter's Guild"
+								desc="These expert hunters train animal companions to gain an edge. These exotic creatures have honed their instincts to help a guild member survive and thrive in the dangerous dungeon depths."
+							></GuildCard>
+							<GuildCard
+								src={ImageGuildMage}
+								title="Mage's Guild"
+								desc="These studious scholars have likely forgotten more about the Arcane Arts than you'll learn in a lifetime. They perform powerful ancient rituals on Guildmembers, which furthers their connection to the Arcane power.
+								"
+							></GuildCard>
+							<GuildCard
+								src={ImageGuildMerchant}
+								title="Merchant's Guild"
+								desc="Travelers and purveyors of fine wares, the Merchant's Guild is always on the lookout for strange and powerful artifacts. They will loan guild members equipment to help in various ways throughout their journey into the unknown."
+							></GuildCard>
+						</div>
+					</div>
+				</div>
+				<div className="section">
+					<BuyTheBook></BuyTheBook>
+				</div>
+				<div className="section">
+					<div className="container">
+						<div className="grid-2">
+							<img className="img" src={require('./resources/flavor-enemy.png')} />
+							<div className="text-wrapper">
+								<h1 className="mb-1-5">Enemies</h1>
+								<p className="mb-3">
+									There are 3 types of enemies that roam the dungeons in Order of Eventide: Horde, Forsaken, and Behemoths. Each are dangerous in their own way.
+								</p>
+								<h3 className="mb-1">Horde</h3>
+								<p className="mb-2">
+									Horde are swarming undead creatures that attack by ambushing the party. An individual horde enemy may be weak, but a group can quickly overwhelm a party. An ancient continental war is said to have created these mutated creatures, which may be why Heroes find similar Horde in each region.
+								</p>
+								<h3 className="mb-1">Forsaken</h3>
+								<p className="mb-2">
+									Forsaken are the most common and diverse enemies. They attack in small groups with a balance of strength and numbers. Each region's Forsaken have absorbed the arcane energy unique to that region, so you will see different Forsaken in each region you travel to.
+								</p>
+								<h3 className="mb-1">Behemoths</h3>
+								<p className="mb-2">
+									Behemoths are huge monstrosities that have absorbed massive amounts of arcane energy to become tougher and stronger than a normal Forsaken. Behemoths travel alone, but can be extremely challenging if your party is unprepared.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="section">
+					<div className="container">
+						<h1 className="text--center mb-1-5">
+							Races
+						</h1>
+						<p className="max-w-md mb-1">
+							There are 19 races a hero may be born into, each with their own Racial Ability. A hero's race also determines their starting health.
+						</p>
+						<div className="">
+							<ReactCardSlider slides={RaceSlider}/>
+						</div>
+						<div className="grid-4">
+							<RaceCard
+								src={ImageRaceHuman}
+								title="Human"
+								desc="The most populous and varied of the races, humans are extremely adaptable. Their storied history is checkered by complicated relations with other races."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceElf}
+								title="Elf"
+								desc="Elves are tall, slender, and fair-skinned in comparison to humans. They often flaunt their intelligence and fortitude. Their culture has mastered mystical medical practices that grant them unusually long life."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceDwarf}
+								title="Dwarf"
+								desc="These short and sturdy mountain-dwellers have fantastic facial hair. Spending long hours in dank caverns have given them a hardy constitution. Their knowledge of gemstones is unparalleled"
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceHalfling}
+								title="Halfling"
+								desc="These curious little people have a fondness for small valuables, pleasant conversations, and food. Standing at about half the height of a typical human, Halflings love helping others."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceHalfOgre}
+								title="Half-Ogre"
+								desc="Hulking humanoids that are rippling with muscle and excel at hand-to-hand combat. The larger the brawl, the more their rage is fueled. Their pale skin is often stained red with the blood of their enemies."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceCentaur}
+								title="Centaur"
+								desc="Fierce yet loyal nomads that employ a strike-first tactic. Because of their half-human, half-horse anatomy, they are skilled in finding weaknesses in both men and monsters."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceGnome}
+								title="Gnome"
+								desc="Small and mischievous, gnomes are well acquainted with magic and the elements. They are very sore about their size, so only mention it to them if you want to take a beating."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceViera}
+								title="Viera"
+								desc="Viera are slender and beautiful. They prefer to fight from a distance, rather than dirtying their hands with enemies up close. They take great pride in being Viera, and sometimes look down on others."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceHalfDrake}
+								title="Half-Drake"
+								desc="These dragon-kin are born by mixing pure bloodlines. They are sharp physically and mentally, and surprise their foes with attacks from all sides."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceFaun}
+								title="Faun"
+								desc="While their goat-like legs allow them to easily traverse difficult terrain, they often hide their hooves with large boots or shoes. They are cunning and often find a sneaky way to get what they want."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceMemzymzi}
+								title="Memzymzi"
+								desc="Agile tiger-folk with outstanding agility, and a fear of fire to match it. Memzymzi are extremely athletic and rarely tire. When on the prowl, it's nearly impossible to detect them."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceRockskin}
+								title="Rockskin"
+								desc="Rockskins have been long-feared for their stony skin and hot-headed temperament. Their heat also runs deep – their cores are nearly molten. When Rockskins die, their cores go cold and they turn completely stiff."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceOutlander}
+								title="Outlander"
+								desc="As their name implies, the origins of Outlanders remain unknown. These humanoids possess a special connection with Arcane forces, granting them the ability to learn any number of languages. Even so, they prefer to stay silent behind their masks."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceMerfolk}
+								title="Merfolk"
+								desc="These scaly humanoids are cold-blooded and feel at home in any body of water. Although they love to throw grand feasts, they can be awkward around other races."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceTalpoc}
+								title="Talpoc"
+								desc="These cultured lizardfolk are often reserved and cautious. However, they have an insatiable appetite for exotic histories, often dedicating years of research to ancient cultures and rituals."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceApex}
+								title="Apex"
+								desc="An Apex's furry body is attuned to all types of physical training. What their societies lack in technological advancements, they make up for in pure athletic prowess. They are strongly empathic, yet speak in very simple sentences."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceEmpyrean}
+								title="Empyrean"
+								desc="Empyrean boys and girls are granted powerful abilities by bathing in a milky liquid as part of their tribal coming-of-age ritual."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceKhenra}
+								title="Khenra"
+								desc="Their sleek form and angular ears make them expert hunters. They love having their hair petted, and will often spend hours grooming each night with their mate."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceDrydd}
+								title="Drydd"
+								desc="Drydd love to spend time meditating and resting their branches. Their powerful psionic abilities allow them to refresh heroes as well as cause havoc in the minds of foes."
+							></RaceCard>
 						</div>
 					</div>
 				</div>

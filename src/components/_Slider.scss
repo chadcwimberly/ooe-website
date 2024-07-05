@@ -16,6 +16,19 @@
 			padding-left: .5rem;
 			padding-right: .5rem;
 		}
+
+		@media screen and (max-width: 900px) {
+			grid-auto-columns: 33.33%;
+
+			&>* {
+				padding-left: .75rem;
+				padding-right: .75rem;
+			}
+		}
+
+		@media screen and (max-width: 680px) {
+			grid-auto-columns: 50%;
+		}
 	}
 }
 
@@ -53,7 +66,7 @@
 	&.slider-nav--disabled {
 		opacity: .5;
 		pointer-events: none;
-		
+
 		.slider-nav-img {
 			opacity: .66;
 		}

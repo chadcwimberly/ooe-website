@@ -71,25 +71,25 @@ function App() {
 		<div className="App">
 			<Header></Header>
 			<main className="main">
-				<div className="section">
+				<div id="home" className="section">
 					<div className="container">
 						<h1 className="text--title mb-4 text--center">Step into a world of wonder...</h1>
 						<img className="img" src={require('./resources/feature-roleplay.png')} />
 					</div>
 				</div>
-				<div className="section">
+				<div id="join" className="section">
 					<div className="container">
 						<div className="grid-2">
-							<div className="text-wrapper pl-10vw">
+							<div className="text-wrapper max-w-md">
 								<h1 className="mb-1-5">Join the Order of Eventide</h1>
 								<p className="mb-1-5">Order of Eventide is a pen-and-paper RPG where you create dynamic heroes, fight through dungeons full of unique enemies, find powerful equipment, and rise to vanquish the Source of Evil.</p>
 								<a className="button">Buy Now</a>
 							</div>
-							<img className="img" src={require('./resources/flavor-dungeoneer.png')} />
+							<img className="img sm-hidden" src={require('./resources/flavor-dungeoneer.png')} />
 						</div>
 					</div>
 				</div>
-				<div className="section">
+				<div id="features" className="section">
 					<div className="container">
 						<div className="grid-4">
 							<FeatureCard
@@ -115,7 +115,7 @@ function App() {
 						</div>
 					</div>
 				</div>
-				<div className="section">
+				<div id="regions" className="section">
 					<div className="container">
 						<h1 className="text--center mb-1-5">
 							Regions
@@ -151,14 +151,14 @@ function App() {
 						</div>
 					</div>
 				</div>
-				<div className="section">
+				<div id="" className="section">
 					<BuyTheBook></BuyTheBook>
 				</div>
-				<div className="section">
+				<div id="systems" className="section">
 					<div className="container">
 						<div className="grid-2">
 							<img className="img" src={require('./resources/surge-blunder.png')} />
-							<div className="text-wrapper pr-10vw">
+							<div className="text-wrapper max-w-md">
 								<h1 className="mb-1-5">Surge &amp; Blunder System</h1>
 								<p className="mb-3">
 									The Surge & Blunder System is unique to Order of Eventide. Since the game only uses two 6-sided dice, Surges and Blunders add much more depth to what the dice can do by adding additional benefits to rolling a 6, and negative outcomes to rolling a 1.
@@ -178,7 +178,7 @@ function App() {
 						</div>
 					</div>
 				</div>
-				<div className="section">
+				<div id="guilds" className="section">
 					<div className="container">
 						<h1 className="text--center mb-1-5">
 							Guilds
@@ -214,14 +214,14 @@ function App() {
 						</div>
 					</div>
 				</div>
-				<div className="section">
+				<div id="" className="section">
 					<BuyTheBook></BuyTheBook>
 				</div>
-				<div className="section">
+				<div id="enemies" className="section">
 					<div className="container">
 						<div className="grid-2">
 							<img className="img" src={require('./resources/flavor-enemy.png')} />
-							<div className="text-wrapper pr-10vw">
+							<div className="text-wrapper max-w-md">
 								<h1 className="mb-1-5">Enemies</h1>
 								<p className="mb-3">
 									There are 3 types of enemies that roam the dungeons in Order of Eventide: Horde, Forsaken, and Behemoths. Each are dangerous in their own way.
@@ -242,7 +242,7 @@ function App() {
 						</div>
 					</div>
 				</div>
-				<div className="section">
+				<div id="races" className="section">
 					<div className="container">
 						<h1 className="text--center mb-1-5">
 							Races
@@ -349,7 +349,7 @@ function App() {
 						</Slider>
 					</div>
 				</div>
-				<div className="section">
+				<div id="classes" className="section">
 					<div className="container">
 						<h1 className="text--center mb-1-5">
 							Classes
@@ -475,11 +475,11 @@ function App() {
 						</Slider>
 					</div>
 				</div>
-				<div className="section">
+				<div id="artwork" className="section">
 					<div className="container">
 						<div className="grid-2">
 							<img className="img" src={require('./resources/flavor-art@2x.png')} />
-							<div className="text-wrapper pr-10vw">
+							<div className="text-wrapper max-w-md">
 								<h2 className="mb-1-5">Inspired by Alphonse Mucha's iconic Art Nouveau style</h2>
 								<p className="mb-3">
 									The artwork for Order of Eventide was generated using Midjourney AI, then edited manually for consistency and to reduce artifacts.

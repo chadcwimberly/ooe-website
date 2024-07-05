@@ -5,7 +5,7 @@ export default function BuyTheBook() {
 		<div className="buy-the-book-section">
 			<div className="container">
 				<div className="grid-2">
-					<div className="buy-the-book-desc">
+					<div className="buy-the-book-desc pl-10vw">
 						<h3 className="buy-the-book-title mb-1-5">
 							Buy the Gamebook
 						</h3>

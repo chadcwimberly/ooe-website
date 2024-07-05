@@ -69,14 +69,16 @@ a {
 }
 
 code {
+	@include mono-font-family;
 	display: inline-block;
+	line-height: 1.35;
 	background-color: $gloss;
 	border-radius: .5rem;
 	padding: .5rem;
 }
 
 .text-link {
-	@include mono-font-family;
+	@include body-font-family;
 	color: $stormysea;
 	text-decoration: underline;
 }
@@ -195,6 +197,7 @@ h1.text--title {
 	background-image: url("./resources/book-mockup.png");
 	width: 100%;
 	height: 100%;
+    max-width: 500px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -287,4 +290,22 @@ img {
 	max-width: 42rem;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.pl-10vw {
+	padding-left: 10vw;
+}
+
+.pr-10vw {
+	padding-right: 10vw;
+}
+
+@media screen and (max-width: 768px) {
+	.pl-10vw {
+		padding-left: 0;
+	}
+
+	.pr-10vw {
+		padding-right: 0;
+	}
 }

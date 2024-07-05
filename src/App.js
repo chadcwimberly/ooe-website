@@ -66,29 +66,6 @@ import ImageClassSaboteur from "./resources/class-saboteur@2x.png";
 import ImageClassThief from "./resources/class-thief@2x.png";
 import ImageClassWarlock from "./resources/class-warlock@2x.png";
 
-
-const RaceSlider = [
-	{ image: ImageRaceHuman, title: "Human", description: "The most populous and varied of the races, humans are extremely adaptable. Their storied history is checkered by complicated relations with other races." },
-	{ image: ImageRaceElf, title: "Elf", description: "Elves are tall, slender, and fair-skinned in comparison to humans. They often flaunt their intelligence and fortitude. Their culture has mastered mystical medical practices that grant them unusually long life." },
-	{ image: ImageRaceDwarf, title: "Dwarf", description: "These short and sturdy mountain-dwellers have fantastic facial hair. Spending long hours in dank caverns have given them a hardy constitution. Their knowledge of gemstones is unparalleled" },
-	{ image: ImageRaceHalfling, title: "Halfling", description: "These curious little people have a fondness for small valuables, pleasant conversations, and food. Standing at about half the height of a typical human, Halflings love helping others." },
-	{ image: ImageRaceHalfOgre, title: "Half-Ogre", description: "Hulking humanoids that are rippling with muscle and excel at hand-to-hand combat. The larger the brawl, the more their rage is fueled. Their pale skin is often stained red with the blood of their enemies." },
-	{ image: ImageRaceCentaur, title: "Centaur", description: "Fierce yet loyal nomads that employ a strike-first tactic. Because of their half-human, half-horse anatomy, they are skilled in finding weaknesses in both men and monsters." },
-	{ image: ImageRaceGnome, title: "Gnome", description: "Small and mischievous, gnomes are well acquainted with magic and the elements. They are very sore about their size, so only mention it to them if you want to take a beating." },
-	{ image: ImageRaceViera, title: "Viera", description: "Viera are slender and beautiful. They prefer to fight from a distance, rather than dirtying their hands with enemies up close. They take great pride in being Viera, and sometimes look down on others." },
-	{ image: ImageRaceHalfDrake, title: "Half-Drake", description: "These dragon-kin are born by mixing pure bloodlines. They are sharp physically and mentally, and surprise their foes with attacks from all sides." },
-	{ image: ImageRaceFaun, title: "Faun", description: "While their goat-like legs allow them to easily traverse difficult terrain, they often hide their hooves with large boots or shoes. They are cunning and often find a sneaky way to get what they want." },
-	{ image: ImageRaceMemzymzi, title: "Memzymzi", description: "Agile tiger-folk with outstanding agility, and a fear of fire to match it. Memzymzi are extremely athletic and rarely tire. When on the prowl, it's nearly impossible to detect them." },
-	{ image: ImageRaceRockskin, title: "Rockskin", description: "Rockskins have been long-feared for their stony skin and hot-headed temperament. Their heat also runs deep – their cores are nearly molten. When Rockskins die, their cores go cold and they turn completely stiff." },
-	{ image: ImageRaceOutlander, title: "Outlander", description: "As their name implies, the origins of Outlanders remain unknown. These humanoids possess a special connection with Arcane forces, granting them the ability to learn any number of languages. Even so, they prefer to stay silent behind their masks." },
-	{ image: ImageRaceMerfolk, title: "Merfolk", description: "These scaly humanoids are cold-blooded and feel at home in any body of water. Although they love to throw grand feasts, they can be awkward around other races." },
-	{ image: ImageRaceTalpoc, title: "Talpoc", description: "These cultured lizardfolk are often reserved and cautious. However, they have an insatiable appetite for exotic histories, often dedicating years of research to ancient cultures and rituals." },
-	{ image: ImageRaceApex, title: "Apex", description: "An Apex's furry body is attuned to all types of physical training. What their societies lack in technological advancements, they make up for in pure athletic prowess. They are strongly empathic, yet speak in very simple sentences." },
-	{ image: ImageRaceEmpyrean, title: "Empyrean", description: "Empyrean boys and girls are granted powerful abilities by bathing in a milky liquid as part of their tribal coming-of-age ritual." },
-	{ image: ImageRaceKhenra, title: "Khenra", description: "Their sleek form and angular ears make them expert hunters. They love having their hair petted, and will often spend hours grooming each night with their mate." },
-	{ image: ImageRaceDrydd, title: "Drydd", description: "Drydd love to spend time meditating and resting their branches. Their powerful psionic abilities allow them to refresh heroes as well as cause havoc in the minds of foes." }
-]
-
 function App() {
 	return (
 		<div className="App">
@@ -103,7 +80,7 @@ function App() {
 				<div className="section">
 					<div className="container">
 						<div className="grid-2">
-							<div className="text-wrapper">
+							<div className="text-wrapper pl-10vw">
 								<h1 className="mb-1-5">Join the Order of Eventide</h1>
 								<p className="mb-1-5">Order of Eventide is a pen-and-paper RPG where you create dynamic heroes, fight through dungeons full of unique enemies, find powerful equipment, and rise to vanquish the Source of Evil.</p>
 								<a className="button">Buy Now</a>
@@ -181,7 +158,7 @@ function App() {
 					<div className="container">
 						<div className="grid-2">
 							<img className="img" src={require('./resources/surge-blunder.png')} />
-							<div className="text-wrapper">
+							<div className="text-wrapper pr-10vw">
 								<h1 className="mb-1-5">Surge &amp; Blunder System</h1>
 								<p className="mb-3">
 									The Surge & Blunder System is unique to Order of Eventide. Since the game only uses two 6-sided dice, Surges and Blunders add much more depth to what the dice can do by adding additional benefits to rolling a 6, and negative outcomes to rolling a 1.
@@ -244,7 +221,7 @@ function App() {
 					<div className="container">
 						<div className="grid-2">
 							<img className="img" src={require('./resources/flavor-enemy.png')} />
-							<div className="text-wrapper">
+							<div className="text-wrapper pr-10vw">
 								<h1 className="mb-1-5">Enemies</h1>
 								<p className="mb-3">
 									There are 3 types of enemies that roam the dungeons in Order of Eventide: Horde, Forsaken, and Behemoths. Each are dangerous in their own way.
@@ -502,10 +479,10 @@ function App() {
 					<div className="container">
 						<div className="grid-2">
 							<img className="img" src={require('./resources/flavor-art@2x.png')} />
-							<div className="text-wrapper">
+							<div className="text-wrapper pr-10vw">
 								<h2 className="mb-1-5">Inspired by Alphonse Mucha's iconic Art Nouveau style</h2>
 								<p className="mb-3">
-									The artwork for Order of Eventide was generated using Midjourney AI and edited manually for consistency and to reduce artifacts.
+									The artwork for Order of Eventide was generated using Midjourney AI, then edited manually for consistency and to reduce artifacts.
 								</p>
 								<h3 className="mb-1">Make your own artwork</h3>
 								<p className="mb-1">

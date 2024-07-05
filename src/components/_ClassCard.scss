@@ -1,0 +1,31 @@
+@import '../Variables';
+
+/* -------------------------------------------------------------------------- */
+/*                                 CLASS CARD                                 */
+/* -------------------------------------------------------------------------- */
+
+.class-tier {
+	font-size: 1rem;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: .5rem .75rem;
+	border-radius: .5rem;
+	text-transform: uppercase;
+
+	&.class-tier--1 {
+		background: $daisy;
+		color: $black;
+	}
+
+	&.class-tier--2 {
+		background: $foam;
+		color: $black;
+	}
+
+	&.class-tier--3 {
+		background: $stormysea;
+		color: $white;
+	}
+}

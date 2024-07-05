@@ -13,3 +13,28 @@ $foam: #C3D5CD;
 $teal: #488180;
 $stormysea: #285B62;
 
+
+/* -------------------------------------------------------------------------- */
+/*                                 TYPOGRAPHY                                 */
+/* -------------------------------------------------------------------------- */
+
+@mixin heading-font-family {
+	font-family: 'JustCosmic';
+}
+
+@mixin body-font-family {
+	font-family: 'Minion 3';
+}
+
+@mixin mono-font-family {
+	font-family: monospace;
+}
+
+@mixin heading-text {
+	@include heading-font-family;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 115%;
+	letter-spacing: 0.03em;
+	color: $black;
+}

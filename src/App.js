@@ -5,25 +5,26 @@ import FeatureCard from './components/FeatureCard';
 import RegionCard from './components/RegionCard';
 import GuildCard from './components/GuildCard';
 import RaceCard from './components/RaceCard';
+import ClassCard from './components/ClassCard';
 import BuyTheBook from './components/BuyTheBook';
 import Slider from './components/Slider';
 
-import ImageFeatureMaterials from "./resources/feature-materials.png";
-import ImageFeatureTime from "./resources/feature-time.png";
-import ImageFeaturePlayers from "./resources/feature-players.png";
-import ImageFeatureDice from "./resources/feature-dice.png";
+import ImageFeatureMaterials from "./resources/feature-materials@2x.png";
+import ImageFeatureTime from "./resources/feature-time@2x.png";
+import ImageFeaturePlayers from "./resources/feature-players@2x.png";
+import ImageFeatureDice from "./resources/feature-dice@2x.png";
 
-import ImageRegionAlzim from "./resources/region-alzim.png";
-import ImageRegionMantora from "./resources/region-mantora.png";
-import ImageRegionInkulur from "./resources/region-inkulur.png";
-import ImageRegionValeria from "./resources/region-valeria.png";
-import ImageRegionJatagar from "./resources/region-jatagar.png";
-import ImageRegionOlma from "./resources/region-olma.png";
+import ImageRegionAlzim from "./resources/region-alzim@2x.png";
+import ImageRegionMantora from "./resources/region-mantora@2x.png";
+import ImageRegionInkulur from "./resources/region-inkulur@2x.png";
+import ImageRegionValeria from "./resources/region-valeria@2x.png";
+import ImageRegionJatagar from "./resources/region-jatagar@2x.png";
+import ImageRegionOlma from "./resources/region-olma@2x.png";
 
-import ImageGuildFighter from "./resources/guild-fighter.png";
-import ImageGuildHunter from "./resources/guild-hunter.png";
-import ImageGuildMage from "./resources/guild-mage.png";
-import ImageGuildMerchant from "./resources/guild-merchant.png";
+import ImageGuildFighter from "./resources/guild-fighter@2x.png";
+import ImageGuildHunter from "./resources/guild-hunter@2x.png";
+import ImageGuildMage from "./resources/guild-mage@2x.png";
+import ImageGuildMerchant from "./resources/guild-merchant@2x.png";
 
 import ImageRaceHuman from "./resources/race-human@2x.png";
 import ImageRaceElf from "./resources/race-elf@2x.png";
@@ -44,6 +45,27 @@ import ImageRaceApex from "./resources/race-apex@2x.png";
 import ImageRaceEmpyrean from "./resources/race-empyrean@2x.png";
 import ImageRaceKhenra from "./resources/race-khenra@2x.png";
 import ImageRaceDrydd from "./resources/race-drydd@2x.png";
+
+import ImageClassAdventurer from "./resources/class-adventurer@2x.png";
+import ImageClassFighter from "./resources/class-fighter@2x.png";
+import ImageClassBard from "./resources/class-bard@2x.png";
+import ImageClassBerserker from "./resources/class-berserker@2x.png";
+import ImageClassCleric from "./resources/class-cleric@2x.png";
+import ImageClassDruid from "./resources/class-druid@2x.png";
+import ImageClassDuelist from "./resources/class-duelist@2x.png";
+import ImageClassGuardian from "./resources/class-guardian@2x.png";
+import ImageClassHunter from "./resources/class-hunter@2x.png";
+import ImageClassIllusionist from "./resources/class-illusionist@2x.png";
+import ImageClassInquisitor from "./resources/class-inquisitor@2x.png";
+import ImageClassJuggler from "./resources/class-juggler@2x.png";
+import ImageClassMage from "./resources/class-mage@2x.png";
+import ImageClassMonk from "./resources/class-monk@2x.png";
+import ImageClassReaper from "./resources/class-reaper@2x.png";
+import ImageClassRogue from "./resources/class-rogue@2x.png";
+import ImageClassSaboteur from "./resources/class-saboteur@2x.png";
+import ImageClassThief from "./resources/class-thief@2x.png";
+import ImageClassWarlock from "./resources/class-warlock@2x.png";
+
 
 const RaceSlider = [
 	{ image: ImageRaceHuman, title: "Human", description: "The most populous and varied of the races, humans are extremely adaptable. Their storied history is checkered by complicated relations with other races." },
@@ -248,7 +270,7 @@ function App() {
 						<h1 className="text--center mb-1-5">
 							Races
 						</h1>
-						<p className="max-w-md mb-1">
+						<p className="max-w-md mb-4">
 							There are 19 races a hero may be born into, each with their own Racial Ability. A hero's race also determines their starting health.
 						</p>
 						<Slider>
@@ -352,14 +374,158 @@ function App() {
 				</div>
 				<div className="section">
 					<div className="container">
-
+						<h1 className="text--center mb-1-5">
+							Classes
+						</h1>
+						<p className="max-w-md mb-4">
+							A hero's class determines their fighting style and role in the party. Each class has an active Class Ability as well as a Class Passive. Heroes start with a Tier 1 class, and can unlock more advanced classes over time.
+						</p>
+						<Slider>
+							<ClassCard
+								src={ImageClassAdventurer}
+								title="Adventurer"
+								tier="1"
+								desc="A well-traveled wanderer who can take advantage of any situation."
+							/>
+							<ClassCard
+								src={ImageClassFighter}
+								title="Fighter"
+								tier="1"
+								desc="A swarthy brawler who pummels enemies face-to-face."
+							/>
+							<ClassCard
+								src={ImageClassHunter}
+								title="Hunter"
+								tier="1"
+								desc="An eagle-eyed ranger who excels at fighting multiple enemies at range."
+							/>
+							<ClassCard
+								src={ImageClassMage}
+								title="Mage"
+								tier="1"
+								desc="A versatile scholar who utilizes arcane magic for both offense and defense."
+							/>
+							<ClassCard
+								src={ImageClassBerserker}
+								title="Berserker"
+								tier="2"
+								desc="A wild warrior who forgoes defense to maximize destructive power."
+							/>
+							<ClassCard
+								src={ImageClassGuardian}
+								title="Guardian"
+								tier="2"
+								desc="A weathered veteran and expert in all forms of defense."
+							/>
+							<ClassCard
+								src={ImageClassRogue}
+								title="Rogue"
+								tier="2"
+								desc="An opportunist with a keen eye for weak points."
+							/>
+							<ClassCard
+								src={ImageClassThief}
+								title="Thief"
+								tier="2"
+								desc="A sly scoundrel who specializes in misdirection."
+							/>
+							<ClassCard
+								src={ImageClassDruid}
+								title="Druid"
+								tier="2"
+								desc="A seer who is at one with the arcane power present in nature."
+							/>
+							<ClassCard
+								src={ImageClassCleric}
+								title="Cleric"
+								tier="2"
+								desc="A servant of the Divine, called to protect and support other heroes."
+							/>
+							<ClassCard
+								src={ImageClassInquisitor}
+								title="Inquisitor"
+								tier="3"
+								desc="A skilled knight with mastery over arcane weapon skills."
+							/>
+							<ClassCard
+								src={ImageClassMonk}
+								title="Monk"
+								tier="3"
+								desc="A pious martial artist who channels arcane power for both speed and defense."
+							/>
+							<ClassCard
+								src={ImageClassReaper}
+								title="Reaper"
+								tier="3"
+								desc="An executioner who bargains with death itself."
+							/>
+							<ClassCard
+								src={ImageClassDuelist}
+								title="Duelist"
+								tier="3"
+								desc="A seasoned combatant skilled at evening the odds."
+							/>
+							<ClassCard
+								src={ImageClassSaboteur}
+								title="Saboteur"
+								tier="3"
+								desc="An exacting tactician who takes control of the battlefield."
+							/>
+							<ClassCard
+								src={ImageClassJuggler}
+								title="Juggler"
+								tier="3"
+								desc="A dexterous cut-throat who lives on the edge of danger."
+							/>
+							<ClassCard
+								src={ImageClassWarlock}
+								title="Warlock"
+								tier="3"
+								desc="A master of the arcane arts who subsists on pure energy."
+							/>
+							<ClassCard
+								src={ImageClassIllusionist}
+								title="Illusionist"
+								tier="3"
+								desc="A situational chameleon with a masterful sleight of hand."
+							/>
+							<ClassCard
+								src={ImageClassBard}
+								title="Bard"
+								tier="3"
+								desc="A musician to the Divine who lifts others up, allowing them to push beyond their limits."
+							/>
+						</Slider>
 					</div>
 				</div>
 				<div className="section">
 					<div className="container">
-
+						<div className="grid-2">
+							<img className="img" src={require('./resources/flavor-art@2x.png')} />
+							<div className="text-wrapper">
+								<h2 className="mb-1-5">Inspired by Alphonse Mucha's iconic Art Nouveau style</h2>
+								<p className="mb-3">
+									The artwork for Order of Eventide was generated using Midjourney AI and edited manually for consistency and to reduce artifacts.
+								</p>
+								<h3 className="mb-1">Make your own artwork</h3>
+								<p className="mb-1">
+									<a className="text-link" href="https://www.midjourney.com/" target="_blank">Generate your own heroes, enemies, and adventures with Midjourney.</a>
+								</p>
+								<p className="mb-1">
+									Most of the illustrations for the game book were made using variations on this prompt. Experiment and see what works for you!
+								</p>
+								<code className="mb-3">
+									Retro tabletop RPG drawing of [your idea here]. Full body on a white background. Print by Alphonse Mucha, art nouveau, limited color palette, art nouveau frame.
+								</code>
+								<h3 className="mb-1">Share your artwork</h3>
+								<p className="mb-3">
+									Did you make something cool? We want to see it! Send your creations to <a className="text-link" href="mailto:orderofeventide@gmail.com" target="_blank">orderofeventide@gmail.com</a>.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
+				<BuyTheBook></BuyTheBook>
 			</main>
 			<Footer></Footer>
 		</div>

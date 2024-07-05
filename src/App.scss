@@ -8,23 +8,7 @@ html,
 :root {
 	font-size: 16px;
 	box-sizing: border-box;
-}
-
-@mixin heading-font-family {
-	font-family: 'JustCosmic';
-}
-
-@mixin body-font-family {
-	font-family: 'Minion 3';
-}
-
-@mixin heading-text {
-	@include heading-font-family;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 115%;
-	letter-spacing: 0.03em;
-	color: $black;
+	@include body-font-family;
 }
 
 h1,
@@ -61,9 +45,9 @@ h4,
 	margin: 0;
 }
 
-html,
 a,
-p {
+p,
+span {
 	@include body-font-family;
 	font-style: normal;
 	font-weight: 500;
@@ -82,8 +66,19 @@ a {
 	&:not(.text-link) {
 		text-decoration: none;
 	}
+}
 
-	&:hover {}
+code {
+	display: inline-block;
+	background-color: $gloss;
+	border-radius: .5rem;
+	padding: .5rem;
+}
+
+.text-link {
+	@include mono-font-family;
+	color: $stormysea;
+	text-decoration: underline;
 }
 
 .text--inverse {
@@ -154,59 +149,6 @@ h1.text--title {
 	}
 }
 
-/* -------------------------------------------------------------------------- */
-/*                                   HEADER                                   */
-/* -------------------------------------------------------------------------- */
-
-.header-wrapper {
-	background: $white;
-	box-shadow: 0px 2px 24px rgba($black, 0.25);
-}
-
-.header-nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: .75rem 0;
-	gap: auto;
-	width: 100%;
-	flex: none;
-	order: 0;
-	align-self: stretch;
-	flex-grow: 0;
-}
-
-.header-logotype {
-	@include heading-font-family();
-	display: inline-block;
-	white-space: nowrap;
-	font-size: 2rem;
-	text-align: center;
-	margin: 0;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                                   FOOTER                                   */
-/* -------------------------------------------------------------------------- */
-
-.footer-wrapper {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 3rem 2rem;
-	gap: 64px;
-
-	/* web/stormy sea */
-	background: $stormysea;
-
-	/* Inside auto layout */
-	flex: none;
-	order: 3;
-	align-self: stretch;
-	flex-grow: 0;
-}
 
 /* -------------------------------------------------------------------------- */
 /*                                REGION CARDS                                */
@@ -272,6 +214,8 @@ img {
 .container {
 	padding: 0 1rem;
 	max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section {

@@ -1,0 +1,23 @@
+@import '../Variables';
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+.footer-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 2rem;
+	gap: 64px;
+
+	/* web/stormy sea */
+	background: $stormysea;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 3;
+	align-self: stretch;
+	flex-grow: 0;
+}

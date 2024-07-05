@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.76d2cab8.css",
-    "main.js": "/static/js/main.d5147f17.js",
+    "main.css": "/static/css/main.8a07e1e8.css",
+    "main.js": "/static/js/main.9f020c5b.js",
     "static/js/453.fa2a6b85.chunk.js": "/static/js/453.fa2a6b85.chunk.js",
     "static/media/book-mockup.png": "/static/media/book-mockup.1ca3d16d50f80a082751.png",
     "static/media/flavor-art@2x.png": "/static/media/flavor-art@2x.07035bb50e590dad76fc.png",
@@ -61,15 +61,17 @@
     "static/media/feature-dice@2x.png": "/static/media/feature-dice@2x.43aed7d1b0667d6eb720.png",
     "static/media/class-mage@2x.png": "/static/media/class-mage@2x.1e72c89bf687f11cda69.png",
     "static/media/feature-time@2x.png": "/static/media/feature-time@2x.ebb9f783512b105d9edb.png",
+    "static/media/JustCosmic.woff": "/static/media/JustCosmic.7895dcbea78fb036d371.woff",
+    "static/media/JustCosmic.woff2": "/static/media/JustCosmic.3efb46b685babbdae38d.woff2",
     "index.html": "/index.html",
     "static/media/chevron-right.svg": "/static/media/chevron-right.25e013c0cd36338282ebfbac47fdb95b.svg",
     "static/media/chevron-left.svg": "/static/media/chevron-left.d5374061ba06238198dfd4fc711ed9dd.svg",
-    "main.76d2cab8.css.map": "/static/css/main.76d2cab8.css.map",
-    "main.d5147f17.js.map": "/static/js/main.d5147f17.js.map",
+    "main.8a07e1e8.css.map": "/static/css/main.8a07e1e8.css.map",
+    "main.9f020c5b.js.map": "/static/js/main.9f020c5b.js.map",
     "453.fa2a6b85.chunk.js.map": "/static/js/453.fa2a6b85.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76d2cab8.css",
-    "static/js/main.d5147f17.js"
+    "static/css/main.8a07e1e8.css",
+    "static/js/main.9f020c5b.js"
   ]
 }

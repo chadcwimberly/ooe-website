@@ -1,5 +1,204 @@
+/* -------------------------------------------------------------------------- */
+/*                                   COLORS                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 TYPOGRAPHY                                 */
+/* -------------------------------------------------------------------------- */
+html,
+:root {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+h1,
+.h1 {
+  font-size: 3.125rem;
+  font-family: "JustCosmic";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 0.03em;
+  color: #2D2322;
+  margin: 0;
+}
+
+h2,
+.h2 {
+  font-size: 2.25rem;
+  font-family: "JustCosmic";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 0.03em;
+  color: #2D2322;
+  margin: 0;
+}
+
+h3,
+.h3 {
+  font-size: 1.625rem;
+  font-family: "JustCosmic";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 0.03em;
+  color: #2D2322;
+  margin: 0;
+}
+
+h4,
+.h4 {
+  font-family: "Minion 3";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 115%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #2D2322;
+  margin: 0;
+}
+
+html,
+a,
+p {
+  font-family: "Minion 3";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 125%;
+  color: #2D2322;
+}
+
+a {
+  cursor: pointer;
+}
+a:not(.text-link) {
+  text-decoration: none;
+}
+.text--inverse {
+  color: #fff;
+}
+
+.text--title,
+h1.text--title {
+  font-size: 4.5rem;
+}
+
+.text--center {
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   BUTTONS                                  */
+/* -------------------------------------------------------------------------- */
+.button {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  background-color: #488180;
+  border: 1px solid #285B62;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.button.button--small {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+}
+.button:hover {
+  background-color: #285B62;
+}
+
+.nav-item {
+  padding: 0.5rem 0.75rem;
+  line-height: 1.25em;
+  display: inline-flex;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+}
+.nav-item:hover {
+  background-color: #E1EAE6;
+  border-color: #E1EAE6;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+.header-wrapper {
+  background: #fff;
+  box-shadow: 0px 2px 24px rgba(45, 35, 34, 0.25);
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 0;
+  gap: auto;
+  width: 100%;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.header-logotype {
+  font-family: "JustCosmic";
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  gap: 64px;
+  /* web/stormy sea */
+  background: #285B62;
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               SECTIONOGRAPHY                               */
+/* -------------------------------------------------------------------------- */
+.container {
+  padding: 0 1rem;
+  max-width: 1440px;
+}
+
+.section {
+  padding: 6rem 0 3rem;
+  margin-top: -3rem;
+}
+
 .App {
   text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -12,7 +211,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

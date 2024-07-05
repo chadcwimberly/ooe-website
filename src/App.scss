@@ -1,0 +1,269 @@
+/* -------------------------------------------------------------------------- */
+/*                                   COLORS                                   */
+/* -------------------------------------------------------------------------- */
+
+$white: #fff;
+$black: #2D2322;
+
+$daisy: #F6DF8D;
+$goldenrod: #F6A435;
+$burntedge: #CD6F23;
+$gloss: #E1EAE6;
+$foam: #C3D5CD;
+$teal: #488180;
+$stormysea: #285B62;
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 TYPOGRAPHY                                 */
+/* -------------------------------------------------------------------------- */
+
+html,
+:root {
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+@mixin heading-font-family {
+	font-family: 'JustCosmic';
+}
+
+@mixin body-font-family {
+	font-family: 'Minion 3';
+}
+
+@mixin heading-text {
+	@include heading-font-family;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 115%;
+	letter-spacing: 0.03em;
+	color: $black;
+}
+
+h1,
+.h1 {
+	font-size: 3.125rem;
+	@include heading-text;
+	margin: 0;
+}
+
+h2,
+.h2 {
+	font-size: 2.25rem;
+	@include heading-text;
+	margin: 0;
+}
+
+h3,
+.h3 {
+	font-size: 1.625rem;
+	@include heading-text;
+	margin: 0;
+}
+
+h4,
+.h4 {
+	@include body-font-family;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 115%;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: $black;
+	margin: 0;
+}
+
+html,
+a,
+p {
+	@include body-font-family;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.125rem;
+	line-height: 125%;
+	color: $black;
+}
+
+a {
+	cursor: pointer;
+
+	&:not(.text-link) {
+		text-decoration: none;
+	}
+
+	&:hover {}
+}
+
+.text--inverse {
+	color: $white;
+}
+
+.text--title,
+h1.text--title {
+	font-size: 4.5rem;
+}
+
+.text--center {
+	text-align: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   BUTTONS                                  */
+/* -------------------------------------------------------------------------- */
+
+.button {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: .75rem 1.25rem;
+	background-color: $teal;
+	border: 1px solid $stormysea;
+	border-radius: .5rem;
+	font-size: 1.125rem;
+	text-transform: uppercase;
+	color: $white;
+	cursor: pointer;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+
+	&.button--small {
+		padding: .5rem .75rem;
+		font-size: 1rem;
+	}
+
+	&:hover {
+		background-color: $stormysea;
+	}
+}
+
+.nav-item {
+	padding: .5rem .75rem;
+	line-height: 1.25em;
+	display: inline-flex;
+	background-color: $white;
+	border-radius: .5rem;
+	border: 1px solid $white;
+
+	&:hover {
+		background-color: $gloss;
+		border-color: $gloss;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+
+.header-wrapper {
+	background: $white;
+	box-shadow: 0px 2px 24px rgba($black, 0.25);
+}
+
+.header-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: .75rem 0;
+	gap: auto;
+	width: 100%;
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+}
+
+.header-logotype {
+	@include heading-font-family();
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 2rem;
+	text-align: center;
+	margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+.footer-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 2rem;
+	gap: 64px;
+
+	/* web/stormy sea */
+	background: $stormysea;
+
+	/* Inside auto layout */
+	flex: none;
+	order: 3;
+	align-self: stretch;
+	flex-grow: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               SECTIONOGRAPHY                               */
+/* -------------------------------------------------------------------------- */
+
+.container {
+	padding: 0 1rem;
+	max-width: 1440px;
+}
+
+.section {
+	padding: 6rem 0 3rem;
+	margin-top: -3rem;
+}
+
+.App {
+	text-align: center;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100vh;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}

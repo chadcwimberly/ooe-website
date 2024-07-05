@@ -1,15 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.22630d97.css",
-    "main.js": "/static/js/main.923c1157.js",
+    "main.css": "/static/css/main.123f2d8a.css",
+    "main.js": "/static/js/main.f369f1c9.js",
     "static/js/453.622963f8.chunk.js": "/static/js/453.622963f8.chunk.js",
+    "static/media/feature-roleplay.png": "/static/media/feature-roleplay.d1e5fe1f14997c6d255b.png",
+    "static/media/flavor-dungeoneer.png": "/static/media/flavor-dungeoneer.700e65ba66348e408638.png",
+    "static/media/region-valeria.png": "/static/media/region-valeria.3eb3840d19cff85f1e6c.png",
+    "static/media/region-jatagar.png": "/static/media/region-jatagar.2a3a9d1dbfa783888ff1.png",
+    "static/media/region-mantora.png": "/static/media/region-mantora.935b2a71013e9d38dd2f.png",
+    "static/media/region-alzim.png": "/static/media/region-alzim.4cc5022d9d955198803c.png",
+    "static/media/region-inkulur.png": "/static/media/region-inkulur.a7bb60bb5d16ebd1a611.png",
+    "static/media/region-olma.png": "/static/media/region-olma.a11c1a1043e9635e772a.png",
+    "static/media/feature-players.png": "/static/media/feature-players.57762da137d62991487d.png",
+    "static/media/feature-materials.png": "/static/media/feature-materials.78475a016ac022b3db0c.png",
+    "static/media/feature-dice.png": "/static/media/feature-dice.f6d3126cf92da09a0835.png",
+    "static/media/feature-time.png": "/static/media/feature-time.bada7d51f8e5df4098d1.png",
     "index.html": "/index.html",
-    "main.22630d97.css.map": "/static/css/main.22630d97.css.map",
-    "main.923c1157.js.map": "/static/js/main.923c1157.js.map",
+    "main.123f2d8a.css.map": "/static/css/main.123f2d8a.css.map",
+    "main.f369f1c9.js.map": "/static/js/main.f369f1c9.js.map",
     "453.622963f8.chunk.js.map": "/static/js/453.622963f8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22630d97.css",
-    "static/js/main.923c1157.js"
+    "static/css/main.123f2d8a.css",
+    "static/js/main.f369f1c9.js"
   ]
 }

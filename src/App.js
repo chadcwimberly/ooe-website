@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import FeatureCard from './components/FeatureCard';
@@ -6,8 +6,7 @@ import RegionCard from './components/RegionCard';
 import GuildCard from './components/GuildCard';
 import RaceCard from './components/RaceCard';
 import BuyTheBook from './components/BuyTheBook';
-
-import ReactCardSlider from 'react-card-slider-component';
+import Slider from './components/Slider';
 
 import ImageFeatureMaterials from "./resources/feature-materials.png";
 import ImageFeatureTime from "./resources/feature-time.png";
@@ -102,7 +101,7 @@ function App() {
 							<FeatureCard
 								src={ImageFeatureTime}
 								title="45-90min play sessions"
-								desc="While each dungeon is unique, you won’t need to block off an entire day to play."
+								desc="While each dungeon is unique, you won't need to block off an entire day to play."
 							></FeatureCard>
 							<FeatureCard
 								src={ImageFeaturePlayers}
@@ -112,7 +111,7 @@ function App() {
 							<FeatureCard
 								src={ImageFeatureDice}
 								title="Two 6-sided dice"
-								desc="Play the entire game with just two d6 dice. A set of role-playing dice can be helpful, but they’re not required."
+								desc="Play the entire game with just two d6 dice. A set of role-playing dice can be helpful, but they're not required."
 							></FeatureCard>
 						</div>
 					</div>
@@ -252,10 +251,7 @@ function App() {
 						<p className="max-w-md mb-1">
 							There are 19 races a hero may be born into, each with their own Racial Ability. A hero's race also determines their starting health.
 						</p>
-						<div className="">
-							<ReactCardSlider slides={RaceSlider}/>
-						</div>
-						<div className="grid-4">
+						<Slider>
 							<RaceCard
 								src={ImageRaceHuman}
 								title="Human"
@@ -351,7 +347,7 @@ function App() {
 								title="Drydd"
 								desc="Drydd love to spend time meditating and resting their branches. Their powerful psionic abilities allow them to refresh heroes as well as cause havoc in the minds of foes."
 							></RaceCard>
-						</div>
+						</Slider>
 					</div>
 				</div>
 				<div className="section">

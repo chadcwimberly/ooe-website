@@ -1,0 +1,48 @@
+@import '../Variables';
+
+.slider-wrapper {
+	position: relative;
+
+	.slider-inner {
+		max-width: none;
+		display: grid;
+		grid-auto-columns: 25%;
+		grid-auto-flow: column;
+		margin: 0 1rem;
+		overflow-x: auto;
+		overflow-y: hidden;
+
+		&>* {
+			padding-left: .5rem;
+			padding-right: .5rem;
+		}
+	}
+}
+
+.slider-nav {
+	display: inline-flex;
+	position: absolute;
+	width: 4rem;
+	height: 4rem;
+	top: 33%;
+	transform: translateY(-50%);
+	align-items: center;
+	justify-content: center;
+	background-color: $daisy;
+	border-radius: 100em;
+	overflow: hidden;
+	cursor: pointer;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+
+	&.slider-nav--right {
+		right: 0;
+	}
+
+	&.slider-nav--left {
+		left: 0;
+	}
+
+	&:hover {
+		background-color: $goldenrod;
+	}
+}

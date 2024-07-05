@@ -18,6 +18,7 @@ html,
 
 * {
 	box-sizing: border-box;
+	background-repeat: no-repeat;
 }
 
 .text--title,
@@ -246,6 +247,17 @@ code {
 	max-width: 500px;
 }
 
+@media screen and (max-width: 480px) {
+	.buy-the-book-section {
+		padding-bottom: 2rem;
+	}
+
+	.buy-the-book-img {
+		background-position: center center;
+		background-size: contain;
+	}
+}
+
 /* -------------------------------------------------------------------------- */
 /*                               SECTIONOGRAPHY                               */
 /* -------------------------------------------------------------------------- */
@@ -297,6 +309,12 @@ img {
 				margin: auto;
 				max-width: 35rem;
 				max-height: 35rem;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			&>img {
+				max-width: 75%;
 			}
 		}
 	}

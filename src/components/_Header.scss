@@ -52,7 +52,6 @@
 	text-align: center;
 	margin: 0;
 	height: 1.5rem;
-    transform: translateY(-8%);
 }
 
 .nav-item {
@@ -102,5 +101,12 @@
 	.nav-item,
 	.header-nav-inner--left {
 		display: none;
+	}
+}
+
+@media screen and (min-width: 901px) {
+
+	.header-logotype {
+		transform: translateY(-8%);
 	}
 }

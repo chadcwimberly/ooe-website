@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.66276c19.css",
-    "main.js": "/static/js/main.65f655da.js",
+    "main.css": "/static/css/main.a645e730.css",
+    "main.js": "/static/js/main.c69b5313.js",
     "static/js/453.fa2a6b85.chunk.js": "/static/js/453.fa2a6b85.chunk.js",
     "static/media/book-mockup.png": "/static/media/book-mockup.1ca3d16d50f80a082751.png",
     "static/media/flavor-art@2x.png": "/static/media/flavor-art@2x.07035bb50e590dad76fc.png",
@@ -13,6 +13,7 @@
     "static/media/region-mantora@2x.png": "/static/media/region-mantora@2x.8bd6e378ef2f4e6f8919.png",
     "static/media/region-inkulur@2x.png": "/static/media/region-inkulur@2x.eeb04307e251c77d4d3a.png",
     "static/media/flavor-enemy.png": "/static/media/flavor-enemy.1c36feddea10e6c7d386.png",
+    "static/media/order-of-eventide-combat-sheet.pdf": "/static/media/order-of-eventide-combat-sheet.7e27806fbbd6cdcf2148.pdf",
     "static/media/flavor-dungeoneer.png": "/static/media/flavor-dungeoneer.700e65ba66348e408638.png",
     "static/media/class-illusionist@2x.png": "/static/media/class-illusionist@2x.9b60736f94f6f558a4d4.png",
     "static/media/guild-hunter@2x.png": "/static/media/guild-hunter@2x.c7348eb333cd6730d666.png",
@@ -53,26 +54,34 @@
     "static/media/race-human@2x.png": "/static/media/race-human@2x.aac8d4a63cf591980999.png",
     "static/media/class-inquisitor@2x.png": "/static/media/class-inquisitor@2x.9a5c5dce4e7963d266bf.png",
     "static/media/class-reaper@2x.png": "/static/media/class-reaper@2x.3ae6dd30072f64a80c37.png",
+    "static/media/order-of-eventide-hero-sheet-1up.pdf": "/static/media/order-of-eventide-hero-sheet-1up.b9c9f42e96ab20f40e95.pdf",
     "static/media/feature-players@2x.png": "/static/media/feature-players@2x.59a64f449467444c4cab.png",
     "static/media/class-druid@2x.png": "/static/media/class-druid@2x.d3eef109a202e177ac53.png",
+    "static/media/order-of-eventide-hero-sheet-2up.pdf": "/static/media/order-of-eventide-hero-sheet-2up.ec7a8d3210be5474d0b8.pdf",
     "static/media/class-cleric@2x.png": "/static/media/class-cleric@2x.c2009870212b8aa6eee5.png",
     "static/media/class-duelist@2x.png": "/static/media/class-duelist@2x.3de1caddb026fe0ab676.png",
     "static/media/feature-materials@2x.png": "/static/media/feature-materials@2x.76651dce47f15bd023ef.png",
     "static/media/feature-dice@2x.png": "/static/media/feature-dice@2x.43aed7d1b0667d6eb720.png",
+    "static/media/combat-sheet-preview.png": "/static/media/combat-sheet-preview.ae9cb4467665df69ff16.png",
     "static/media/class-mage@2x.png": "/static/media/class-mage@2x.1e72c89bf687f11cda69.png",
     "static/media/feature-time@2x.png": "/static/media/feature-time@2x.ebb9f783512b105d9edb.png",
+    "static/media/order-of-eventide-dungeon-sheet.pdf": "/static/media/order-of-eventide-dungeon-sheet.eacc87cc213cb309490e.pdf",
     "static/media/JustCosmic.woff": "/static/media/JustCosmic.7895dcbea78fb036d371.woff",
+    "static/media/hero-sheet-1up-preview.png": "/static/media/hero-sheet-1up-preview.46569aa0f058f65bcc3b.png",
+    "static/media/hero-sheet-2up-preview.png": "/static/media/hero-sheet-2up-preview.317b5c95043abbb2d545.png",
+    "static/media/dungeon-sheet-preview.png": "/static/media/dungeon-sheet-preview.8d808d04c16f4628f368.png",
     "static/media/JustCosmic.woff2": "/static/media/JustCosmic.3efb46b685babbdae38d.woff2",
     "static/media/order-of-eventide-logotype.svg": "/static/media/order-of-eventide-logotype.f58c0c524ec39708139be05a997a50bd.svg",
     "index.html": "/index.html",
+    "static/media/download.svg": "/static/media/download.fd42574bb8158f4c43a428ad9fa9014f.svg",
     "static/media/chevron-right.svg": "/static/media/chevron-right.25e013c0cd36338282ebfbac47fdb95b.svg",
     "static/media/chevron-left.svg": "/static/media/chevron-left.d5374061ba06238198dfd4fc711ed9dd.svg",
-    "main.66276c19.css.map": "/static/css/main.66276c19.css.map",
-    "main.65f655da.js.map": "/static/js/main.65f655da.js.map",
+    "main.a645e730.css.map": "/static/css/main.a645e730.css.map",
+    "main.c69b5313.js.map": "/static/js/main.c69b5313.js.map",
     "453.fa2a6b85.chunk.js.map": "/static/js/453.fa2a6b85.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66276c19.css",
-    "static/js/main.65f655da.js"
+    "static/css/main.a645e730.css",
+    "static/js/main.c69b5313.js"
   ]
 }

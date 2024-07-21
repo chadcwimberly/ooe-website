@@ -19,19 +19,22 @@ class Header extends React.Component {
 						<a className="nav-item h4" href="/#systems">
 							Systems
 						</a>
+						<a className="nav-item h4" href="/#races">
+							Races
+						</a>
 					</div>
 					<a className="home-link" href="/#home">
 						<img src={ImageLogo} className="header-logotype" alt="Order of Eventide" />
 					</a>
 					<div className="header-nav-inner header-nav-inner--right">
-						<a className="nav-item h4" href="/#races">
-							Races
-						</a>
 						<a className="nav-item h4" href="/#classes">
 							Classes
 						</a>
 						<a className="nav-item h4" href="/#artwork">
 							Artwork
+						</a>
+						<a className="nav-item h4" href="/#resources">
+							Resources
 						</a>
 						<a className="nav-button button button--small" href="#">
 							Buy Now

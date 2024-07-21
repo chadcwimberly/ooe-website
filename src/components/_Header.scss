@@ -26,19 +26,19 @@
 .header-nav {
 	padding: 0.75rem 0 .5rem;
 	grid-template-columns: 1fr auto 1fr;
-	gap: 2rem;
+	gap: 3rem;
 
 	.header-nav-inner {
 		flex-basis: 1fr;
 		width: 100%;
-		gap: 1rem;
+		gap: .5rem;
 
 		&.header-nav-inner--left {
-			justify-content: end;
+			// justify-content: end;
 		}
 
 		&.header-nav-inner--right {
-			justify-content: start;
+			// justify-content: start;
 		}
 	}
 
@@ -107,6 +107,6 @@
 @media screen and (min-width: 901px) {
 
 	.header-logotype {
-		transform: translateY(-8%);
+		// transform: translateY(-8%);
 	}
 }

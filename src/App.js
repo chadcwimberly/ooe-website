@@ -6,6 +6,7 @@ import RegionCard from './components/RegionCard';
 import GuildCard from './components/GuildCard';
 import RaceCard from './components/RaceCard';
 import ClassCard from './components/ClassCard';
+import ResourceCard from './components/ResourceCard';
 import BuyTheBook from './components/BuyTheBook';
 import Slider from './components/Slider';
 
@@ -65,6 +66,16 @@ import ImageClassRogue from "./resources/class-rogue@2x.png";
 import ImageClassSaboteur from "./resources/class-saboteur@2x.png";
 import ImageClassThief from "./resources/class-thief@2x.png";
 import ImageClassWarlock from "./resources/class-warlock@2x.png";
+
+import ImageResourceCombatSheet from "./resources/blank-sheets/combat-sheet-preview.png";
+import ImageResourceDungeonSheet from "./resources/blank-sheets/dungeon-sheet-preview.png";
+import ImageResourceHeroSheet1Up from "./resources/blank-sheets/hero-sheet-1up-preview.png";
+import ImageResourceHeroSheet2Up from "./resources/blank-sheets/hero-sheet-2up-preview.png";
+
+import ResourceCombatSheet from "./resources/blank-sheets/order-of-eventide-combat-sheet.pdf";
+import ResourceDungeonSheet from "./resources/blank-sheets/order-of-eventide-dungeon-sheet.pdf";
+import ResourceHeroSheet1Up from "./resources/blank-sheets/order-of-eventide-hero-sheet-1up.pdf";
+import ResourceHeroSheet2Up from "./resources/blank-sheets/order-of-eventide-hero-sheet-2up.pdf";
 
 function App() {
 	return (
@@ -503,6 +514,74 @@ function App() {
 					</div>
 				</div>
 				<BuyTheBook></BuyTheBook>
+				<div id="resources" className="section">
+					<div className="container">
+						<h1 className="text--center mb-1-5">
+							Resources
+						</h1>
+						<p className="text--center max-w-md mb-4">
+							These resources are free to download and share.
+						</p>
+						<h2 className="mb-2">
+							Blank Sheets
+						</h2>
+						<div className="grid-4 mb-6">
+							<ResourceCard
+								src={ImageResourceHeroSheet1Up}
+								title="Blank Hero Sheet"
+								link={ResourceHeroSheet1Up}
+							></ResourceCard>
+							<ResourceCard
+								src={ImageResourceHeroSheet2Up}
+								title="Blank Hero Sheet (2-up)"
+								link={ResourceHeroSheet2Up}
+							></ResourceCard>
+							<ResourceCard
+								src={ImageResourceCombatSheet}
+								title="Blank Combat Sheet"
+								link={ResourceCombatSheet}
+							></ResourceCard>
+							<ResourceCard
+								src={ImageResourceDungeonSheet}
+								title="Blank Dungeon Sheet"
+								link={ResourceDungeonSheet}
+							></ResourceCard>
+						</div>
+
+						{/*
+						<h2 className="mb-2">
+							Pre-made Adventures
+						</h2>
+						<div className="grid-4 mb-6">
+							<ResourceCard
+								src={}
+								title="Starter Hero 1"
+								link={}
+							></ResourceCard>
+							<ResourceCard
+								src={}
+								title="Starter Hero 2"
+								link={}
+							></ResourceCard>
+							<ResourceCard
+								src={}
+								title="Starter Hero 3"
+								link={}
+							></ResourceCard>
+							<ResourceCard
+								src={}
+								title="Starter Hero 4"
+								link={}
+							></ResourceCard>
+							<ResourceCard
+								src={}
+								title="Starter Dungeon"
+								link={}
+							></ResourceCard>
+						</div>
+						*/}
+					</div>
+				</div>
 			</main>
 			<Footer></Footer>
 		</div>

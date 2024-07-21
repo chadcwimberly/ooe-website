@@ -507,7 +507,7 @@ function App() {
 								</code>
 								<h3 className="mb-1">Share your artwork</h3>
 								<p className="mb-3">
-									Did you make something cool? We want to see it! Send your creations to <a className="text-link" href="mailto:orderofeventide@gmail.com" target="_blank">orderofeventide@gmail.com</a>.
+									Did you make something cool? We want to see it! Send your creations to <a className="text-link" href="mailto:art@orderofeventide.com" target="_blank">art@orderofeventide.com</a>.
 								</p>
 							</div>
 						</div>

@@ -110,13 +110,13 @@ function App() {
 							></FeatureCard>
 							<FeatureCard
 								src={ImageFeatureTime}
-								title="45-90min play sessions"
+								title="1-2 hour play sessions"
 								desc="While each dungeon is unique, you won't need to block off an entire day to play."
 							></FeatureCard>
 							<FeatureCard
 								src={ImageFeaturePlayers}
-								title="1-4 Players"
-								desc="Experienced players can control multiple characters, so Order of Eventide can be enjoyed solo or with up to 3 friends."
+								title="Cooperative or Solo"
+								desc="Order of Eventide can be enjoyed solo or with up to 3 friends, with a total of 4 heroes in play at once."
 							></FeatureCard>
 							<FeatureCard
 								src={ImageFeatureDice}
@@ -525,7 +525,7 @@ function App() {
 						<h2 className="mb-2">
 							Blank Sheets
 						</h2>
-						<div className="grid-4 mb-6">
+						<div className="grid-4 mb-4">
 							<ResourceCard
 								src={ImageResourceHeroSheet1Up}
 								title="Blank Hero Sheet"

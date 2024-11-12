@@ -12,14 +12,14 @@ import Slider from './components/Slider';
 
 import ImageFeatureMaterials from "./resources/feature-materials@2x.png";
 import ImageFeatureTime from "./resources/feature-time@2x.png";
-import ImageFeaturePlayers from "./resources/feature-players@2x.png";
+import ImageFeatureSwords from "./resources/feature-swords@2x.png";
 import ImageFeatureDice from "./resources/feature-dice@2x.png";
 
-import ImageRegionAlzim from "./resources/region-alzim@2x.png";
+import ImageRegionSundessa from "./resources/region-sundessa@2x.png";
 import ImageRegionMantora from "./resources/region-mantora@2x.png";
-import ImageRegionInkulur from "./resources/region-inkulur@2x.png";
-import ImageRegionValeria from "./resources/region-valeria@2x.png";
-import ImageRegionJatagar from "./resources/region-jatagar@2x.png";
+import ImageRegionTorgul from "./resources/region-torgul@2x.png";
+import ImageRegionRidian from "./resources/region-ridian@2x.png";
+import ImageRegionJakkar from "./resources/region-jakkar@2x.png";
 import ImageRegionOlma from "./resources/region-olma@2x.png";
 
 import ImageGuildFighter from "./resources/guild-fighter@2x.png";
@@ -56,15 +56,15 @@ import ImageClassDruid from "./resources/class-druid@2x.png";
 import ImageClassDuelist from "./resources/class-duelist@2x.png";
 import ImageClassGuardian from "./resources/class-guardian@2x.png";
 import ImageClassHunter from "./resources/class-hunter@2x.png";
-import ImageClassIllusionist from "./resources/class-illusionist@2x.png";
+import ImageClassSummoner from "./resources/class-summoner@2x.png";
 import ImageClassInquisitor from "./resources/class-inquisitor@2x.png";
 import ImageClassJuggler from "./resources/class-juggler@2x.png";
 import ImageClassMage from "./resources/class-mage@2x.png";
 import ImageClassMonk from "./resources/class-monk@2x.png";
 import ImageClassReaper from "./resources/class-reaper@2x.png";
 import ImageClassRogue from "./resources/class-rogue@2x.png";
-import ImageClassSaboteur from "./resources/class-saboteur@2x.png";
-import ImageClassThief from "./resources/class-thief@2x.png";
+import ImageClassTrickster from "./resources/class-trickster@2x.png";
+import ImageClassMarksman from "./resources/class-marksman@2x.png";
 import ImageClassWarlock from "./resources/class-warlock@2x.png";
 
 import ImageResourceCombatSheet from "./resources/blank-sheets/combat-sheet-preview.png";
@@ -84,8 +84,8 @@ function App() {
 			<main className="main">
 				<div id="home" className="section">
 					<div className="container">
-						<h1 className="text--title mb-4 text--center">Step into a world of wonder...</h1>
-						<img className="img" src={require('./resources/feature-roleplay.png')} />
+						<h1 className="text--title mb-4 text--center">Night Falls on Valeria</h1>
+						<img className="img" src={require('./resources/flavor-roleplay@2x.png')} />
 					</div>
 				</div>
 				<div id="join" className="section">
@@ -93,10 +93,21 @@ function App() {
 						<div className="grid-2">
 							<div className="text-wrapper max-w-md">
 								<h1 className="mb-1-5">Join the Order of Eventide</h1>
-								<p className="mb-1-5">Order of Eventide is a pen-and-paper RPG where you create dynamic heroes, fight through dungeons full of unique enemies, find powerful equipment, and rise to vanquish the Source of Evil.</p>
+								<p className="mb-1-5">
+									<em>A great evil has spread across the continent of Valeria, spawning vicious monsters and terrorizing the innocent.</em>
+								</p>
+								<p className="mb-1-5">
+									<em>Your quest, with the help of Ordermaster Tauriel, is to venture into Valeria's six regions and defeat the Master Behemoths found there. Doing so will lessen the hold darkness has over this land.</em>
+								</p>
+								<p className="mb-1-5">
+									<em>If you are successful, you may be able to draw out the Source of Evil and end the nightmare that plagues this land. May the light be with you, heroes.</em>
+								</p>
+								<p className="mb-1-5">
+									Order of Eventide is a pen-and-paper RPG where you create dynamic heroes, fight through dungeons full of unique enemies, find powerful equipment, and rise to vanquish the Source of Evil.
+								</p>
 								<a className="button">Buy Now</a>
 							</div>
-							<img className="img sm-hidden" src={require('./resources/flavor-dungeoneer.png')} />
+							<img className="img sm-hidden" src={require('./resources/flavor-join@2x.png')} />
 						</div>
 					</div>
 				</div>
@@ -104,24 +115,24 @@ function App() {
 					<div className="container">
 						<div className="grid-4">
 							<FeatureCard
+								src={ImageFeatureSwords}
+								title="Limitless Possibilities"
+								desc="Create unique heroes from 19 Races and 19 Classes. Join guilds and explore randomly generated dungeons across 6 diverse regions."
+							></FeatureCard>
+							<FeatureCard
+								src={ImageFeatureDice}
+								title="Play Your Way"
+								desc="Discover powerful synergies in a simple yet deep combat system with ample opportunities to roleplay your character."
+							></FeatureCard>
+							<FeatureCard
 								src={ImageFeatureMaterials}
-								title="No game master required"
-								desc="Everyone involved can enjoy playing the game, rather than keeping track of stats."
+								title="Easy Setup"
+								desc="Play the entire game with just this book, a pencil, and two 6-sided dice. No game master required!"
 							></FeatureCard>
 							<FeatureCard
 								src={ImageFeatureTime}
 								title="1-2 hour play sessions"
 								desc="While each dungeon is unique, you won't need to block off an entire day to play."
-							></FeatureCard>
-							<FeatureCard
-								src={ImageFeaturePlayers}
-								title="Cooperative or Solo"
-								desc="Order of Eventide can be enjoyed solo or with up to 3 friends, with a total of 4 heroes in play at once."
-							></FeatureCard>
-							<FeatureCard
-								src={ImageFeatureDice}
-								title="Two 6-sided dice"
-								desc="Play the entire game with just two d6 dice. A set of role-playing dice can be helpful, but they're not required."
 							></FeatureCard>
 						</div>
 					</div>
@@ -136,24 +147,24 @@ function App() {
 						</p>
 						<div className="grid-3">
 							<RegionCard
-								src={ImageRegionAlzim}
-								title="Alzim"
+								src={ImageRegionSundessa}
+								title="Sundessa"
 							></RegionCard>
 							<RegionCard
 								src={ImageRegionMantora}
 								title="Mantora"
 							></RegionCard>
 							<RegionCard
-								src={ImageRegionInkulur}
-								title="Inkulur"
+								src={ImageRegionTorgul}
+								title="Torgul"
 							></RegionCard>
 							<RegionCard
-								src={ImageRegionValeria}
-								title="Valeria"
+								src={ImageRegionRidian}
+								title="Ridian"
 							></RegionCard>
 							<RegionCard
-								src={ImageRegionJatagar}
-								title="Jatagar"
+								src={ImageRegionJakkar}
+								title="Jakkar"
 							></RegionCard>
 							<RegionCard
 								src={ImageRegionOlma}
@@ -259,7 +270,7 @@ function App() {
 							Races
 						</h1>
 						<p className="max-w-md mb-4">
-							There are 19 races a hero may be born into, each with their own Racial Ability. A hero's race also determines their starting health.
+							There are 19 races a hero may be born into, each with their own Racial Ability. A hero's race also determines their starting stats, such as health, attack, and defense.
 						</p>
 						<Slider>
 							<RaceCard
@@ -270,7 +281,7 @@ function App() {
 							<RaceCard
 								src={ImageRaceElf}
 								title="Elf"
-								desc="Elves are tall, slender, and fair-skinned in comparison to humans. They often flaunt their intelligence and fortitude. Their culture has mastered mystical medical practices that grant them unusually long life."
+								desc="Elves are slender and dexterous in comparison to humans. They hold life as sacred and have little patience for those who upset the balance of nature. Their culture has mastered mystical medical practices that grant them unusually long life."
 							></RaceCard>
 							<RaceCard
 								src={ImageRaceDwarf}
@@ -298,9 +309,9 @@ function App() {
 								desc="Small and mischievous, gnomes are well acquainted with magic and the elements. They are very sore about their size, so only mention it to them if you want to take a beating."
 							></RaceCard>
 							<RaceCard
-								src={ImageRaceViera}
-								title="Viera"
-								desc="Viera are slender and beautiful. They prefer to fight from a distance, rather than dirtying their hands with enemies up close. They take great pride in being Viera, and sometimes look down on others."
+								src={ImageRaceFaun}
+								title="Faun"
+								desc="While their goat-like legs allow them to easily traverse difficult terrain, they often hide their hooves with large boots or shoes. They are cunning and often find a sneaky way to get what they want."
 							></RaceCard>
 							<RaceCard
 								src={ImageRaceHalfDrake}
@@ -308,29 +319,9 @@ function App() {
 								desc="These dragon-kin are born by mixing pure bloodlines. They are sharp physically and mentally, and surprise their foes with attacks from all sides."
 							></RaceCard>
 							<RaceCard
-								src={ImageRaceFaun}
-								title="Faun"
-								desc="While their goat-like legs allow them to easily traverse difficult terrain, they often hide their hooves with large boots or shoes. They are cunning and often find a sneaky way to get what they want."
-							></RaceCard>
-							<RaceCard
 								src={ImageRaceMemzymzi}
-								title="Memzymzi"
-								desc="Agile tiger-folk with outstanding agility, and a fear of fire to match it. Memzymzi are extremely athletic and rarely tire. When on the prowl, it's nearly impossible to detect them."
-							></RaceCard>
-							<RaceCard
-								src={ImageRaceRockskin}
-								title="Rockskin"
-								desc="Rockskins have been long-feared for their stony skin and hot-headed temperament. Their heat also runs deep – their cores are nearly molten. When Rockskins die, their cores go cold and they turn completely stiff."
-							></RaceCard>
-							<RaceCard
-								src={ImageRaceOutlander}
-								title="Outlander"
-								desc="As their name implies, the origins of Outlanders remain unknown. These humanoids possess a special connection with Arcane forces, granting them the ability to learn any number of languages. Even so, they prefer to stay silent behind their masks."
-							></RaceCard>
-							<RaceCard
-								src={ImageRaceMerfolk}
-								title="Merfolk"
-								desc="These scaly humanoids are cold-blooded and feel at home in any body of water. Although they love to throw grand feasts, they can be awkward around other races."
+								title="Tiger-kin"
+								desc="Agile tiger-folk with outstanding agility, and a fear of fire to match it. Tiger-kin are extremely athletic and rarely tire. When on the prowl, it's nearly impossible to detect them."
 							></RaceCard>
 							<RaceCard
 								src={ImageRaceTalpoc}
@@ -338,9 +329,29 @@ function App() {
 								desc="These cultured lizardfolk are often reserved and cautious. However, they have an insatiable appetite for exotic histories, often dedicating years of research to ancient cultures and rituals."
 							></RaceCard>
 							<RaceCard
+								src={ImageRaceRockskin}
+								title="Rockskin"
+								desc="Rockskins have been long-feared for their stony skin and hot-headed temperament. Their heat also runs deep &mdash; their cores are nearly molten. When Rockskins die, their cores go cold and they turn completely stiff."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceOutlander}
+								title="Outlander"
+								desc="As their name implies, the origins of Outlanders remain unknown. These humanoids possess a special connection with Arcane forces, granting them the ability to learn any number of languages. Even so, they prefer to stay silent behind their masks."
+							></RaceCard>
+							<RaceCard
 								src={ImageRaceApex}
 								title="Apex"
 								desc="An Apex's furry body is attuned to all types of physical training. What their societies lack in technological advancements, they make up for in pure athletic prowess. They are strongly empathic, yet speak in very simple sentences."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceMerfolk}
+								title="Merfolk"
+								desc="These scaly humanoids are cold-blooded and feel at home in any body of water. Although they love to throw grand feasts, they can be awkward around other races."
+							></RaceCard>
+							<RaceCard
+								src={ImageRaceViera}
+								title="Sylvera"
+								desc="Sylvera are slender and beautiful. They prefer to fight from a distance, rather than dirtying their hands with enemies up close. They take great pride in being Sylvera, and sometimes look down on others."
 							></RaceCard>
 							<RaceCard
 								src={ImageRaceEmpyrean}
@@ -370,12 +381,6 @@ function App() {
 						</p>
 						<Slider>
 							<ClassCard
-								src={ImageClassAdventurer}
-								title="Adventurer"
-								tier="1"
-								desc="A well-traveled wanderer who can take advantage of any situation."
-							/>
-							<ClassCard
 								src={ImageClassFighter}
 								title="Fighter"
 								tier="1"
@@ -394,6 +399,12 @@ function App() {
 								desc="A versatile scholar who utilizes arcane magic for both offense and defense."
 							/>
 							<ClassCard
+								src={ImageClassAdventurer}
+								title="Adventurer"
+								tier="1"
+								desc="A well-traveled wanderer who can take advantage of any situation."
+							/>
+							<ClassCard
 								src={ImageClassBerserker}
 								title="Berserker"
 								tier="2"
@@ -406,16 +417,16 @@ function App() {
 								desc="A weathered veteran and expert in all forms of defense."
 							/>
 							<ClassCard
+								src={ImageClassMarksman}
+								title="Marksman"
+								tier="2"
+								desc="An expert shot with a keen eye for weak points."
+							/>
+							<ClassCard
 								src={ImageClassRogue}
 								title="Rogue"
 								tier="2"
-								desc="An opportunist with a keen eye for weak points."
-							/>
-							<ClassCard
-								src={ImageClassThief}
-								title="Thief"
-								tier="2"
-								desc="A sly scoundrel who specializes in misdirection."
+								desc="A sly scoundrel who specializes in close-quarters combat."
 							/>
 							<ClassCard
 								src={ImageClassDruid}
@@ -431,9 +442,9 @@ function App() {
 							/>
 							<ClassCard
 								src={ImageClassInquisitor}
-								title="Inquisitor"
+								title="Paladin"
 								tier="3"
-								desc="A skilled knight with mastery over arcane weapon skills."
+								desc="A divinely-empowered warrior who wields sword and light in defense of their oath."
 							/>
 							<ClassCard
 								src={ImageClassMonk}
@@ -454,10 +465,10 @@ function App() {
 								desc="A seasoned combatant skilled at evening the odds."
 							/>
 							<ClassCard
-								src={ImageClassSaboteur}
-								title="Saboteur"
+								src={ImageClassTrickster}
+								title="Trickster"
 								tier="3"
-								desc="An exacting tactician who takes control of the battlefield."
+								desc="A quick-witted tactician with a masterful sleight of hand."
 							/>
 							<ClassCard
 								src={ImageClassJuggler}
@@ -467,15 +478,15 @@ function App() {
 							/>
 							<ClassCard
 								src={ImageClassWarlock}
-								title="Warlock"
+								title="Runeweaver"
 								tier="3"
-								desc="A master of the arcane arts who subsists on pure energy."
+								desc="A sagacious arcanist who controls enemies."
 							/>
 							<ClassCard
-								src={ImageClassIllusionist}
-								title="Illusionist"
+								src={ImageClassSummoner}
+								title="Summoner"
 								tier="3"
-								desc="A situational chameleon with a masterful sleight of hand."
+								desc="A guardian of the passages between the physical and spiritual realms."
 							/>
 							<ClassCard
 								src={ImageClassBard}
@@ -497,17 +508,7 @@ function App() {
 								</p>
 								<h3 className="mb-1">Make your own artwork</h3>
 								<p className="mb-1">
-									<a className="text-link" href="https://www.midjourney.com/" target="_blank">Generate your own heroes, enemies, and adventures with Midjourney.</a>
-								</p>
-								<p className="mb-1">
-									Most of the illustrations for the game book were made using variations on this prompt. Experiment and see what works for you!
-								</p>
-								<code className="mb-3">
-									Retro tabletop RPG drawing of [your idea here]. Full body on a white background. Print by Alphonse Mucha, art nouveau, limited color palette, art nouveau frame.
-								</code>
-								<h3 className="mb-1">Share your artwork</h3>
-								<p className="mb-3">
-									Did you make something cool? We want to see it! Send your creations to <a className="text-link" href="mailto:art@orderofeventide.com" target="_blank">art@orderofeventide.com</a>.
+									You can generate your own images of heroes, enemies, and more with <a className="text-link" href="https://www.midjourney.com/" target="_blank">Midjourney</a>. We'd love to see the art you generate &mdash; send it to <a className="text-link" href="mailto:art@orderofeventide.com" target="_blank">art@orderofeventide.com</a> to strike up a conversation.
 								</p>
 							</div>
 						</div>

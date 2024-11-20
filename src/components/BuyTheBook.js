@@ -12,7 +12,7 @@ export default function BuyTheBook() {
 						<p className="mb-1-5 text--lg">
 							The 250-page Order of Eventide gamebook is printed in beautiful Premium Color. Delve into the world of Valeria with everything you need to play including starter heroes, blank sheets, and even gameplay and roleplay variants.
 						</p>
-						<a className="button buy-the-book-button" href="#">Buy Now on Amazon</a>
+						<a className="button buy-the-book-button" href="https://a.co/d/5Go3uvh">Buy Now on Amazon</a>
 					</div>
 					<div
 						className="buy-the-book-img"

@@ -7,6 +7,7 @@ import GuildCard from './components/GuildCard';
 import RaceCard from './components/RaceCard';
 import ClassCard from './components/ClassCard';
 import ResourceCard from './components/ResourceCard';
+import VideoCard from './components/VideoCard';
 import BuyTheBook from './components/BuyTheBook';
 import Slider from './components/Slider';
 
@@ -66,6 +67,8 @@ import ImageClassRogue from "./resources/class-rogue@2x.png";
 import ImageClassTrickster from "./resources/class-trickster@2x.png";
 import ImageClassMarksman from "./resources/class-marksman@2x.png";
 import ImageClassWarlock from "./resources/class-warlock@2x.png";
+
+import ImageResourceComingSoon from "./resources/coming-soon.png";
 
 import ImageResourceCombatSheet from "./resources/blank-sheets/combat-sheet-preview.png";
 import ImageResourceDungeonSheet from "./resources/blank-sheets/dungeon-sheet-preview.png";
@@ -526,7 +529,7 @@ function App() {
 						<h2 className="mb-2">
 							Blank Sheets
 						</h2>
-						<div className="grid-4 mb-4">
+						<div className="grid-4 mb-6">
 							<ResourceCard
 								src={ImageResourceHeroSheet1Up}
 								title="Blank Hero Sheet"
@@ -547,6 +550,41 @@ function App() {
 								title="Blank Dungeon Sheet"
 								link={ResourceDungeonSheet}
 							></ResourceCard>
+						</div>
+						<h2 className="mb-2">
+							How-to Videos
+						</h2>
+						<div className="grid-4 mb-6">
+							<VideoCard
+								src={ImageResourceComingSoon}
+								title="How to Create a Hero"
+								link={"#"}
+							></VideoCard>
+							<VideoCard
+								src={ImageResourceComingSoon}
+								title="Intro to Kara's Vale"
+								link={"#"}
+							></VideoCard>
+							<VideoCard
+								src={ImageResourceComingSoon}
+								title="Dungeoneering &amp; Player Roles"
+								link={"#"}
+							></VideoCard>
+							<VideoCard
+								src={ImageResourceComingSoon}
+								title="Combat Tutorial"
+								link={"#"}
+							></VideoCard>
+							<VideoCard
+								src={ImageResourceComingSoon}
+								title="Guild Intro"
+								link={"#"}
+							></VideoCard>
+							<VideoCard
+								src={ImageResourceComingSoon}
+								title="Roleplay Rule"
+								link={"#"}
+							></VideoCard>
 						</div>
 
 						{/*

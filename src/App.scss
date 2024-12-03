@@ -140,6 +140,13 @@ code {
 	padding: .5rem;
 }
 
+.text--coming-soon {
+	opacity: .5;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2rem;
+}
+
 .text-link {
 	@include body-font-family;
 	color: $stormysea;

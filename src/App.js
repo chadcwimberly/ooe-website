@@ -105,7 +105,7 @@ function App() {
 								<p className="mb-1-5">
 									Order of Eventide is a pen-and-paper RPG where you create dynamic heroes, fight through dungeons full of unique enemies, find powerful equipment, and rise to vanquish the Source of Evil.
 								</p>
-								<a className="button">Buy Now</a>
+								<a className="button" href="https://a.co/d/5Go3uvh">Buy Now</a>
 							</div>
 							<img className="img sm-hidden" src={require('./resources/flavor-join@2x.png')} />
 						</div>

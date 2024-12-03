@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.78b6728c.css",
-    "main.js": "/static/js/main.06b4ecd3.js",
+    "main.js": "/static/js/main.53971afd.js",
     "static/js/453.fa2a6b85.chunk.js": "/static/js/453.fa2a6b85.chunk.js",
     "static/media/guild-mage@2x.png": "/static/media/guild-mage@2x.e2c375e3234b3d93400a.png",
     "static/media/flavor-roleplay@2x.png": "/static/media/flavor-roleplay@2x.92cfa924c7a6825b90f1.png",
@@ -77,11 +77,11 @@
     "static/media/chevron-right.svg": "/static/media/chevron-right.25e013c0cd36338282ebfbac47fdb95b.svg",
     "static/media/chevron-left.svg": "/static/media/chevron-left.d5374061ba06238198dfd4fc711ed9dd.svg",
     "main.78b6728c.css.map": "/static/css/main.78b6728c.css.map",
-    "main.06b4ecd3.js.map": "/static/js/main.06b4ecd3.js.map",
+    "main.53971afd.js.map": "/static/js/main.53971afd.js.map",
     "453.fa2a6b85.chunk.js.map": "/static/js/453.fa2a6b85.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.78b6728c.css",
-    "static/js/main.06b4ecd3.js"
+    "static/js/main.53971afd.js"
   ]
 }

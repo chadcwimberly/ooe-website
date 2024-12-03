@@ -5,7 +5,10 @@ import ImageDownload from "../resources/download.svg";
 export default function VideoCard({ src, title, link }) {
 	return (
 		<div className="video-card">
-			<a className="video-card-img-wrapper" href={link} target="_blank">
+			<a
+				className="video-card-img-wrapper"
+				// href={link} target="_blank"
+			>
 				<div
 					className="video-card-img mb-1-5"
 					style={{ backgroundImage: `url(${src})` }}

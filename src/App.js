@@ -71,11 +71,12 @@ import ImageClassWarlock from "./resources/class-warlock@2x.png";
 import ImageResourceComingSoon from "./resources/coming-soon.png";
 
 import ImageVideoHowToHero from "./resources/video-thumb-how-to-hero.png"
-import ImageVideoHowToKarasVale from "./resources/video-thumb-how-to-hero.png"
-import ImageVideoHowToGuild from "./resources/video-thumb-how-to-hero.png"
-import ImageVideoHowToDungeoneer from "./resources/video-thumb-how-to-hero.png"
-import ImageVideoHowToCombat from "./resources/video-thumb-how-to-hero.png"
-import ImageVideoHowToRoleplayRule from "./resources/video-thumb-how-to-hero.png"
+import ImageVideoHowToKarasVale from "./resources/video-thumb-how-to-karas-vale.png"
+import ImageVideoHowToGuild from "./resources/video-thumb-how-to-guild.png"
+import ImageVideoHowToDungeoneer from "./resources/video-thumb-how-to-dungeoneer.png"
+import ImageVideoHowToCombat from "./resources/video-thumb-how-to-combat.png"
+import ImageVideoHowToRoleplayRule from "./resources/video-thumb-how-to-roleplay-rule.png"
+
 
 import ImageResourceCombatSheet from "./resources/blank-sheets/combat-sheet-preview.png";
 import ImageResourceDungeonSheet from "./resources/blank-sheets/dungeon-sheet-preview.png";

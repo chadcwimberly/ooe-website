@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.832bea59.css",
-    "main.js": "/static/js/main.603ed2d8.js",
+    "main.js": "/static/js/main.2cffa715.js",
     "static/js/453.fa2a6b85.chunk.js": "/static/js/453.fa2a6b85.chunk.js",
     "static/media/guild-mage@2x.png": "/static/media/guild-mage@2x.e2c375e3234b3d93400a.png",
     "static/media/flavor-roleplay@2x.png": "/static/media/flavor-roleplay@2x.92cfa924c7a6825b90f1.png",
@@ -11,8 +11,13 @@
     "static/media/guild-merchant@2x.png": "/static/media/guild-merchant@2x.d64f2df9475d682223e8.png",
     "static/media/book-mockup.png": "/static/media/book-mockup.1ca3d16d50f80a082751.png",
     "static/media/flavor-art@2x.png": "/static/media/flavor-art@2x.07035bb50e590dad76fc.png",
-    "static/media/video-thumb-how-to-hero.png": "/static/media/video-thumb-how-to-hero.0e640c0eac06bfdd9b44.png",
     "static/media/feature-swords@2x.png": "/static/media/feature-swords@2x.1abe7597c6663812267a.png",
+    "static/media/video-thumb-how-to-karas-vale.png": "/static/media/video-thumb-how-to-karas-vale.82f457fd0fa39f8a1c5b.png",
+    "static/media/video-thumb-how-to-combat.png": "/static/media/video-thumb-how-to-combat.2abf1fe72d7c5e2e91b1.png",
+    "static/media/video-thumb-how-to-guild.png": "/static/media/video-thumb-how-to-guild.4e428e1bf566340fc475.png",
+    "static/media/video-thumb-how-to-hero.png": "/static/media/video-thumb-how-to-hero.dfca6da32e473cc8c3cd.png",
+    "static/media/video-thumb-how-to-roleplay-rule.png": "/static/media/video-thumb-how-to-roleplay-rule.e573f1eaaf8f6109d532.png",
+    "static/media/video-thumb-how-to-dungeoneer.png": "/static/media/video-thumb-how-to-dungeoneer.b6144c8c33d700a38165.png",
     "static/media/region-sundessa@2x.png": "/static/media/region-sundessa@2x.669499febe04efa079d6.png",
     "static/media/region-jakkar@2x.png": "/static/media/region-jakkar@2x.a2dc985ea26c3f10870a.png",
     "static/media/region-ridian@2x.png": "/static/media/region-ridian@2x.33d92cce290f71504557.png",
@@ -79,11 +84,11 @@
     "static/media/icon-chevron-left.svg": "/static/media/icon-chevron-left.d5374061ba06238198dfd4fc711ed9dd.svg",
     "static/media/icon-play.svg": "/static/media/icon-play.dfdd9e0bd372ca81ae9a2be15bd8e026.svg",
     "main.832bea59.css.map": "/static/css/main.832bea59.css.map",
-    "main.603ed2d8.js.map": "/static/js/main.603ed2d8.js.map",
+    "main.2cffa715.js.map": "/static/js/main.2cffa715.js.map",
     "453.fa2a6b85.chunk.js.map": "/static/js/453.fa2a6b85.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.832bea59.css",
-    "static/js/main.603ed2d8.js"
+    "static/js/main.2cffa715.js"
   ]
 }

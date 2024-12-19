@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b71b3de.css",
-    "main.js": "/static/js/main.a60ffaa5.js",
+    "main.css": "/static/css/main.832bea59.css",
+    "main.js": "/static/js/main.603ed2d8.js",
     "static/js/453.fa2a6b85.chunk.js": "/static/js/453.fa2a6b85.chunk.js",
     "static/media/guild-mage@2x.png": "/static/media/guild-mage@2x.e2c375e3234b3d93400a.png",
     "static/media/flavor-roleplay@2x.png": "/static/media/flavor-roleplay@2x.92cfa924c7a6825b90f1.png",
@@ -11,6 +11,7 @@
     "static/media/guild-merchant@2x.png": "/static/media/guild-merchant@2x.d64f2df9475d682223e8.png",
     "static/media/book-mockup.png": "/static/media/book-mockup.1ca3d16d50f80a082751.png",
     "static/media/flavor-art@2x.png": "/static/media/flavor-art@2x.07035bb50e590dad76fc.png",
+    "static/media/video-thumb-how-to-hero.png": "/static/media/video-thumb-how-to-hero.0e640c0eac06bfdd9b44.png",
     "static/media/feature-swords@2x.png": "/static/media/feature-swords@2x.1abe7597c6663812267a.png",
     "static/media/region-sundessa@2x.png": "/static/media/region-sundessa@2x.669499febe04efa079d6.png",
     "static/media/region-jakkar@2x.png": "/static/media/region-jakkar@2x.a2dc985ea26c3f10870a.png",
@@ -73,15 +74,16 @@
     "static/media/JustCosmic.woff2": "/static/media/JustCosmic.3efb46b685babbdae38d.woff2",
     "static/media/order-of-eventide-logotype.svg": "/static/media/order-of-eventide-logotype.f58c0c524ec39708139be05a997a50bd.svg",
     "index.html": "/index.html",
-    "static/media/download.svg": "/static/media/download.fd42574bb8158f4c43a428ad9fa9014f.svg",
-    "static/media/chevron-right.svg": "/static/media/chevron-right.25e013c0cd36338282ebfbac47fdb95b.svg",
-    "static/media/chevron-left.svg": "/static/media/chevron-left.d5374061ba06238198dfd4fc711ed9dd.svg",
-    "main.0b71b3de.css.map": "/static/css/main.0b71b3de.css.map",
-    "main.a60ffaa5.js.map": "/static/js/main.a60ffaa5.js.map",
+    "static/media/icon-download.svg": "/static/media/icon-download.fd42574bb8158f4c43a428ad9fa9014f.svg",
+    "static/media/icon-chevron-right.svg": "/static/media/icon-chevron-right.25e013c0cd36338282ebfbac47fdb95b.svg",
+    "static/media/icon-chevron-left.svg": "/static/media/icon-chevron-left.d5374061ba06238198dfd4fc711ed9dd.svg",
+    "static/media/icon-play.svg": "/static/media/icon-play.dfdd9e0bd372ca81ae9a2be15bd8e026.svg",
+    "main.832bea59.css.map": "/static/css/main.832bea59.css.map",
+    "main.603ed2d8.js.map": "/static/js/main.603ed2d8.js.map",
     "453.fa2a6b85.chunk.js.map": "/static/js/453.fa2a6b85.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b71b3de.css",
-    "static/js/main.a60ffaa5.js"
+    "static/css/main.832bea59.css",
+    "static/js/main.603ed2d8.js"
   ]
 }

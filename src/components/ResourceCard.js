@@ -1,6 +1,6 @@
 import React from 'react';
 import './_ResourceCard.scss';
-import ImageDownload from "../resources/download.svg";
+import ImageDownload from "../resources/icon-download.svg";
 
 export default function ResourceCard({ src, title, link }) {
 	return (

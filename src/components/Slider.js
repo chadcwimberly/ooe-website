@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './_Slider.scss';
 
-import ImageChevronLeft from "../resources/chevron-left.svg";
-import ImageChevronRight from "../resources/chevron-right.svg";
+import ImageChevronLeft from "../resources/icon-chevron-left.svg";
+import ImageChevronRight from "../resources/icon-chevron-right.svg";
 
 export default function Slider({ children }) {
 	const parentRef = useRef(null);

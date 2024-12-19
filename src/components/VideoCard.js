@@ -1,19 +1,19 @@
 import React from 'react';
 import './_VideoCard.scss';
-import ImageDownload from "../resources/download.svg";
+import ImagePlay from "../resources/icon-play.svg";
 
 export default function VideoCard({ src, title, link }) {
 	return (
 		<div className="video-card">
 			<a
 				className="video-card-img-wrapper"
-				// href={link} target="_blank"
+				href={link} target="_blank"
 			>
 				<div
 					className="video-card-img mb-1-5"
 					style={{ backgroundImage: `url(${src})` }}
 				/>
-				{/* <img className="video-card-hover-download" src={ImageDownload} alt="Download" /> */}
+				<img className="video-card-hover-play" src={ImagePlay} alt="Play" />
 			</a>
 			<h3 className="video-card-title mb-1">
 				{title}

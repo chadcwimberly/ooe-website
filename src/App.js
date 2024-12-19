@@ -70,6 +70,13 @@ import ImageClassWarlock from "./resources/class-warlock@2x.png";
 
 import ImageResourceComingSoon from "./resources/coming-soon.png";
 
+import ImageVideoHowToHero from "./resources/video-thumb-how-to-hero.png"
+import ImageVideoHowToKarasVale from "./resources/video-thumb-how-to-hero.png"
+import ImageVideoHowToGuild from "./resources/video-thumb-how-to-hero.png"
+import ImageVideoHowToDungeoneer from "./resources/video-thumb-how-to-hero.png"
+import ImageVideoHowToCombat from "./resources/video-thumb-how-to-hero.png"
+import ImageVideoHowToRoleplayRule from "./resources/video-thumb-how-to-hero.png"
+
 import ImageResourceCombatSheet from "./resources/blank-sheets/combat-sheet-preview.png";
 import ImageResourceDungeonSheet from "./resources/blank-sheets/dungeon-sheet-preview.png";
 import ImageResourceHeroSheet1Up from "./resources/blank-sheets/hero-sheet-1up-preview.png";
@@ -556,41 +563,43 @@ function App() {
 						</h2>
 						<div className="grid-4 mb-6">
 							<VideoCard
-								src={ImageResourceComingSoon}
+								src={ImageVideoHowToHero}
 								title="How to Create a Hero"
-								link={"#"}
+								link={"https://youtu.be/osrvZqV_2Xg"}
 							></VideoCard>
 							<VideoCard
-								src={ImageResourceComingSoon}
+								src={ImageVideoHowToKarasVale}
 								title="Intro to Kara's Vale"
-								link={"#"}
+								link={"https://youtu.be/kK5eiSTBbuA"}
 							></VideoCard>
 							<VideoCard
-								src={ImageResourceComingSoon}
-								title="Dungeoneering &amp; Player Roles"
-								link={"#"}
-							></VideoCard>
-							<VideoCard
-								src={ImageResourceComingSoon}
-								title="Combat Tutorial"
-								link={"#"}
-							></VideoCard>
-							<VideoCard
-								src={ImageResourceComingSoon}
+								src={ImageVideoHowToGuild}
 								title="Guild Intro"
-								link={"#"}
+								link={"https://youtu.be/kCAvmJeqh24"}
 							></VideoCard>
 							<VideoCard
-								src={ImageResourceComingSoon}
+								src={ImageVideoHowToDungeoneer}
+								title="Dungeoneering &amp; Player Roles"
+								link={"https://youtu.be/e-46ooP5BW8"}
+							></VideoCard>
+							<VideoCard
+								src={ImageVideoHowToCombat}
+								title="Combat Tutorial"
+								link={"https://youtu.be/xRuBT_svLi0"}
+							></VideoCard>
+							<VideoCard
+								src={ImageVideoHowToRoleplayRule}
 								title="Roleplay Rule"
-								link={"#"}
+								link={"https://youtu.be/E57exaLiNko"}
 							></VideoCard>
 						</div>
-
-						{/*
 						<h2 className="mb-2">
 							Pre-made Adventures
 						</h2>
+						<p className="mb-4">
+							Coming soon!
+						</p>
+						{/*
 						<div className="grid-4 mb-6">
 							<ResourceCard
 								src={}
@@ -619,6 +628,12 @@ function App() {
 							></ResourceCard>
 						</div>
 						*/}
+						<h2 className="mb-2">
+							Endgame Activities
+						</h2>
+						<p className="mb-4">
+							Coming soon!
+						</p>
 					</div>
 				</div>
 			</main>

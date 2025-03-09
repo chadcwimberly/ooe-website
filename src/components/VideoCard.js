@@ -6,7 +6,7 @@ export default function VideoCard({ src, title, link }) {
 	return (
 		<div className="video-card">
 			<a
-				className="video-card-img-wrapper"
+				className="video-card-img-wrapper watch-video-button"
 				href={link} target="_blank"
 			>
 				<div

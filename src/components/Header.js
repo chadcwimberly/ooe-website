@@ -36,7 +36,7 @@ class Header extends React.Component {
 						<a className="nav-item h4" href="/#resources">
 							Resources
 						</a>
-						<a className="nav-button button button--small" href="https://a.co/d/5Go3uvh">
+						<a className="nav-button button button--small buy-the-book-button" href="https://a.co/d/5Go3uvh">
 							Buy Now
 						</a>
 					</div>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.832bea59.css",
-    "main.js": "/static/js/main.ae11059f.js",
+    "main.css": "/static/css/main.a83ea53b.css",
+    "main.js": "/static/js/main.8eee226a.js",
     "static/js/453.fa2a6b85.chunk.js": "/static/js/453.fa2a6b85.chunk.js",
     "static/media/guild-mage@2x.png": "/static/media/guild-mage@2x.e2c375e3234b3d93400a.png",
     "static/media/flavor-roleplay@2x.png": "/static/media/flavor-roleplay@2x.92cfa924c7a6825b90f1.png",
@@ -9,7 +9,6 @@
     "static/media/guild-hunter@2x.png": "/static/media/guild-hunter@2x.b0d03fab22b449a5f58c.png",
     "static/media/flavor-join@2x.png": "/static/media/flavor-join@2x.1236538acc6a58a47e74.png",
     "static/media/guild-merchant@2x.png": "/static/media/guild-merchant@2x.d64f2df9475d682223e8.png",
-    "static/media/book-mockup.png": "/static/media/book-mockup.1ca3d16d50f80a082751.png",
     "static/media/flavor-art@2x.png": "/static/media/flavor-art@2x.07035bb50e590dad76fc.png",
     "static/media/feature-swords@2x.png": "/static/media/feature-swords@2x.1abe7597c6663812267a.png",
     "static/media/video-thumb-how-to-karas-vale.png": "/static/media/video-thumb-how-to-karas-vale.82f457fd0fa39f8a1c5b.png",
@@ -26,6 +25,7 @@
     "static/media/region-torgul@2x.png": "/static/media/region-torgul@2x.eeb04307e251c77d4d3a.png",
     "static/media/order-of-eventide-combat-sheet.pdf": "/static/media/order-of-eventide-combat-sheet.f93b2f40d74587699998.pdf",
     "static/media/flavor-enemy.png": "/static/media/flavor-enemy.1c36feddea10e6c7d386.png",
+    "static/media/book-mockup.png": "/static/media/book-mockup.73d58d619834ae7034d2.png",
     "static/media/class-trickster@2x.png": "/static/media/class-trickster@2x.9b60736f94f6f558a4d4.png",
     "static/media/race-memzymzi@2x.png": "/static/media/race-memzymzi@2x.59f70a532a1f694d245b.png",
     "static/media/race-halfling@2x.png": "/static/media/race-halfling@2x.e36406353f3be42eba22.png",
@@ -75,20 +75,26 @@
     "static/media/JustCosmic.woff": "/static/media/JustCosmic.7895dcbea78fb036d371.woff",
     "static/media/hero-sheet-1up-preview.png": "/static/media/hero-sheet-1up-preview.38da0ae0a933b8be61bc.png",
     "static/media/hero-sheet-2up-preview.png": "/static/media/hero-sheet-2up-preview.84a4fa0c8449eedab96f.png",
+    "static/media/GintoDiscordNord.woff": "/static/media/GintoDiscordNord.0154944dee251658d174.woff",
     "static/media/dungeon-sheet-preview.png": "/static/media/dungeon-sheet-preview.ba8c1b4c066560632275.png",
+    "static/media/ABCGintoDiscord-Regular.woff": "/static/media/ABCGintoDiscord-Regular.62403c3717fec2c706ea.woff",
+    "static/media/GintoDiscordNord.woff2": "/static/media/GintoDiscordNord.9d47c2f765131ab5024e.woff2",
+    "static/media/ABCGintoDiscord-Regular.woff2": "/static/media/ABCGintoDiscord-Regular.2eab935671d0ff13618d.woff2",
     "static/media/JustCosmic.woff2": "/static/media/JustCosmic.3efb46b685babbdae38d.woff2",
     "static/media/order-of-eventide-logotype.svg": "/static/media/order-of-eventide-logotype.f58c0c524ec39708139be05a997a50bd.svg",
     "index.html": "/index.html",
+    "static/media/Discord-Symbol-Blurple.svg": "/static/media/Discord-Symbol-Blurple.7117a607f027e3409ea7fada11b9c40c.svg",
+    "static/media/Discord-Symbol-White.svg": "/static/media/Discord-Symbol-White.6686a7fe45b4d1f1b52372f6bffb4048.svg",
     "static/media/icon-download.svg": "/static/media/icon-download.fd42574bb8158f4c43a428ad9fa9014f.svg",
     "static/media/icon-chevron-right.svg": "/static/media/icon-chevron-right.25e013c0cd36338282ebfbac47fdb95b.svg",
     "static/media/icon-chevron-left.svg": "/static/media/icon-chevron-left.d5374061ba06238198dfd4fc711ed9dd.svg",
     "static/media/icon-play.svg": "/static/media/icon-play.dfdd9e0bd372ca81ae9a2be15bd8e026.svg",
-    "main.832bea59.css.map": "/static/css/main.832bea59.css.map",
-    "main.ae11059f.js.map": "/static/js/main.ae11059f.js.map",
+    "main.a83ea53b.css.map": "/static/css/main.a83ea53b.css.map",
+    "main.8eee226a.js.map": "/static/js/main.8eee226a.js.map",
     "453.fa2a6b85.chunk.js.map": "/static/js/453.fa2a6b85.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.832bea59.css",
-    "static/js/main.ae11059f.js"
+    "static/css/main.a83ea53b.css",
+    "static/js/main.8eee226a.js"
   ]
 }
